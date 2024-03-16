@@ -1,5 +1,5 @@
 ---
-title: "Quarto Homeage"
+title: "Homepage"
 ---
 
 This is a Quarto website.
