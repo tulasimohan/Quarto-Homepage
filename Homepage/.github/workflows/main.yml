@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: webserver07.fc.ul.pt
-        username: ${{ secrets.ftp_username }}
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.ftp_password }}
         protocol: ftp
         local-dir: ./_site/
