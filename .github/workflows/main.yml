@@ -15,5 +15,4 @@ jobs:
         username: tmolli@ciencias.ulisboa.pt
         password: Tendulk@r9
         protocol: ftps
-        local-dir: ./_site/
         server-dir: public_html/
