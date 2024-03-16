@@ -5,9 +5,9 @@
   Using Quarto on VS Code editor
   ### Initial setup
   1. Create the project on VS Code 
-  - use the keyboard shortcut Cmd + Shift + P 
-  - select  Quarto: Create Project
-  - select Website Project
+    - use the keyboard shortcut Cmd + Shift + P 
+    - select  Quarto: Create Project
+    - select Website Project
   2. Upload it to GitHub. 
       
 ## Deployment
