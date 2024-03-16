@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Homepage"
+  title: "Tulasimohan"
   navbar:
     left:
       - href: index.qmd
@@ -15,5 +15,20 @@ format:
     css: styles.css
     toc: true
 
-
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.samkirkland.com
+        username: myFtpUserName
+        password: ${{ secrets.ftp_password }
 
