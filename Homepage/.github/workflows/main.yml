@@ -14,6 +14,5 @@ jobs:
         server: webserver07.fc.ul.pt
         username: tmolli@ciencias.ulisboa.pt
         password: Tendulk@r9
-        protocol: ftps
-        local-dir: ./_site/
+        protocol: ftp
         server-dir: public_html/
