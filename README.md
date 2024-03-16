@@ -1,14 +1,14 @@
-# Tulasi's Homepage, the making
+# Tulasi's Homepage, the making journey
   Creation and Deployment
 
 ## Creation 
   Using Quarto on VS Code editor
   ### Initial setup
-  :::{.callout}
-  On VS Code 
+  1. Create the project on VS Code 
   - use the keyboard shortcut Cmd + Shift + P 
   - select  Quarto: Create Project
   - select Website Project
- :::   
-## Deployement
-  On an FTP file server using the github action, [FTP Deploy](https://github.com/marketplace/actions/ftp-deploy) 
+  2. Upload it to GitHub. 
+      
+## Deployment
+  On an FTP file server using the GitHub action, [FTP Deploy](https://github.com/marketplace/actions/ftp-deploy) 
