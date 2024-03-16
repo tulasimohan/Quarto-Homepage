@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: webserver07.fc.ul.pt
+        server: ftpes:webserver07.fc.ul.pt
         username: tmolli@ciencias.ulisboa.pt
         password: Tendulk@r9
         protocol: ftp
