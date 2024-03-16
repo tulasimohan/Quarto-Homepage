@@ -13,7 +13,7 @@ jobs:
       with:
         server: webserver07.fc.ul.pt
         username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
         local-dir: ./_site/
         server-dir: public_html/test-push-ftp/
