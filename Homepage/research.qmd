@@ -1,0 +1,66 @@
+:::{.column-page}
+
+::: {.grid}
+
+::: {.g-col-6}
+# Papers
+
+:::{.callout-warning icon=false }
+# **Criticality of $AC^0$ formulae.**
+with Prahladh Harsha and Ashutosh Shankar </br>
+ [CCC]() |  [arXiv]() 
+:::
+
+:::{.callout-warning icon=false }
+# **Tight Chang's lemma type bounds for Boolean functions.**
+with Sourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Manaswi Paraashar, Swagato Sanyal. </br>
+[FSTTCS]() | [arXiv]()
+:::
+
+:::{.callout-warning icon=false }
+# **Probabilistic degree of OR over the Reals.**
+with Siddharth Bhandari and Prahladh Harsha. </br>
+[FSTTCS]() | [eccc]() | [RSA Journal]()
+:::
+
+:::
+
+::: {.g-col-6}
+
+# Theses and Reports 
+
+:::{.callout-note icon=false }
+# **PhD Thesis: On Complexity Measures of Boolean Functions**
+under the guidance of Prof. Prahladh Harsha
+at Tata Institute of Fundamental Research, Mumbai.
+:::
+
+:::{.callout-note icon=false }
+# **Master Project: Structural results and applications to Arithmetic Circuit Complexity**
+under the guidance of Prof. Srikanth Srinivasan,
+as a part of my Master’s Thesis at Chennai Mathematical Institute.
+:::
+
+:::{.callout-note icon=false }
+# **Qualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates**
+under the guidance of Prof. Arkadev Chattopadhyay,
+at the School of Technology and Computer Science, Tata Institute of Fundamental Research.
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+# Informal write-ups
+
+:::{.callout-tip icon=false }
+# **Data Structure lower bounds**
+with Prof. Bruno Loff at University of Lisbon.
+:::
+
+:::

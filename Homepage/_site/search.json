@@ -4,13 +4,62 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\nTip\n\n\n\n\n\n\n\nsketchy\nflatly\n\n\n\n\n\n\n\nSwitching lemma\n\n\n\nLet \\(F\\) be a demorgan formula of depth \\(d\\) \\(AC^0\\) \\[\\Pr_{\\rho \\in \\mathcal{R}}[CDT^{depth}(F|_\\rho) = t] \\leq (p\\sqrt{L})^t\\]"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Tulasimohan Molli",
     "section": "",
-    "text": "About this site"
+    "text": "twitter\n  \n  \n    \n     Github\n  \n  \n    \n     Google Scholar\n  \n  \n    \n     DBLP\n  \n\n  \n  \nHi!\nI am currently a Postdoctoral Researcher at the University of Lisbon.\nI am working with Prof Bruno Loff on the Hardness of Finding Good Algorithms (project HoFGA). I am a member of the research unit LASIGE at the Faculty of Sciences of the University of Lisbon.\n\n\nComplexity theory, Circut Complexity, Communication and Query Complexity, Fourier Analysis, Data Structures lower bounds.\n\n\n\nPhD in Computer Science  Tata Institute of Fundmental Research, Mumbai.\nMSc in Computer Science  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science  Chennai Mathematical Institute, Chennai."
+  },
+  {
+    "objectID": "about.html#bio",
+    "href": "about.html#bio",
+    "title": "Tulasimohan Molli",
+    "section": "",
+    "text": "Frank Hermosillo studies neural networks and their applications at Google Brain. His research focuses on differentiable network pruning approximation and decentralized gradient inversion mechanics. He frequently collaborates with researchers who study machine learning, computer vision, and cognitive science. His work has been featured in WIRED, The Atlantic, Newsweek, and The New York Times Magazine."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Tulasimohan Molli",
+    "section": "",
+    "text": "PhD in Computer Science  Tata Institute of Fundmental Research, Mumbai.\nMSc in Computer Science  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science  Chennai Mathematical Institute, Chennai."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Tulasimohan Molli",
+    "section": "",
+    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Courses\n\n\n\n\n\n\nCS304: Discrete Structures and Computation\n\n\n\nUndergradate level course taught at IISER Berhampur in the even semester of 2022.\n\n\n\n\nTeaching Assitant\n\n\n\n\n\n\nTheory of Computation\n\n\n\nT.A. for the undergradate level course taught by Prof. Sourav Chakraborty at Chennai Mathematical Institute in the even semester of 2012.\n\n\n\n\n\n\n\n\nDiscrete Mathematics\n\n\n\nT.A. for the undergradate level course taught by Prof. Sourav Chakraborty at Chennai Mathematical Institute in the odd semester of 2012."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "Tulasimohan Molli",
+    "section": "",
+    "text": "Complexity theory, Circut Complexity, Communication and Query Complexity, Fourier Analysis, Data Structures lower bounds."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Papers",
+    "section": "",
+    "text": "Papers\n\n\n\n\n\n\nCriticality of \\(AC^0\\) formulae.\n\n\n\nwith Prahladh Harsha and Ashutosh Shankar  CCC | arXiv\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nwith Sourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Manaswi Paraashar, Swagato Sanyal.  FSTTCS | arXiv\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nwith Siddharth Bhandari and Prahladh Harsha.  FSTTCS | eccc | RSA Journal\n\n\n\n\nTheses and Reports\n\n\n\n\n\n\nPhD Thesis: On Complexity Measures of Boolean Functions\n\n\n\nunder the guidance of Prof. Prahladh Harsha at Tata Institute of Fundamental Research, Mumbai.\n\n\n\n\n\n\n\n\nMaster Project: Structural results and applications to Arithmetic Circuit Complexity\n\n\n\nunder the guidance of Prof. Srikanth Srinivasan, as a part of my Master’s Thesis at Chennai Mathematical Institute.\n\n\n\n\n\n\n\n\nQualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates\n\n\n\nunder the guidance of Prof. Arkadev Chattopadhyay, at the School of Technology and Computer Science, Tata Institute of Fundamental Research.\n\n\n\n\n\nInformal write-ups\n\n\n\n\n\n\nData Structure lower bounds\n\n\n\nwith Prof. Bruno Loff at University of Lisbon."
+  },
+  {
+    "objectID": "about.html#research-areas",
+    "href": "about.html#research-areas",
+    "title": "Tulasimohan Molli",
+    "section": "",
+    "text": "Complexity theory, Circut Complexity, Communication and Query Complexity, Fourier Analysis, Data Structures lower bounds."
   }
 ]

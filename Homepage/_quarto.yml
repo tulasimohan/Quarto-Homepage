@@ -2,16 +2,26 @@ project:
   type: website
 
 website:
-  title: "Tulasimohan"
+  title: "Tulasimohan Molli"
   navbar:
-    left:
-      - href: index.qmd
+    right:
+      - icon: house-door
+        href: index.qmd
         text: Home
-      - about.qmd
-
+      - icon : file-person
+        href: about.qmd
+        text: About
+      - icon : book
+        href: research.qmd
+        text: Research
+      - 
+        text: Teaching
+        href: teaching.qmd
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: sketchy
+      dark: sketchy
     css: styles.css
-    toc: true
+    toc: false
 
