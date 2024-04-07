@@ -4,6 +4,7 @@ project:
 website:
   title: "Tulasimohan Molli"
   navbar:
+    background: primary
     right:
       - icon: house-door
         href: index.qmd
@@ -14,14 +15,12 @@ website:
       - icon : book
         href: research.qmd
         text: Research
-      - 
-        text: Teaching
+      - text: Teaching
         href: teaching.qmd
 format:
   html:
     theme: 
-      light: sketchy
-      dark: sketchy
+      light: [Sketchy,theme-light.scss]
+      dark: [Sketchy, theme-dark.scss]
     css: styles.css
     toc: false
-

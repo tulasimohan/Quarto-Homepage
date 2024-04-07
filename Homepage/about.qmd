@@ -20,7 +20,6 @@ about:
     - icon: DBLP
       text: DBLP
       href: https://twitter.com
-      
 ---
 
 
@@ -31,7 +30,7 @@ Hi!
 I am currently a Postdoctoral Researcher at the University of Lisbon.  
 I am working with Prof Bruno Loff on the Hardness of Finding Good Algorithms (project HoFGA). I am a member of the research unit LASIGE at the Faculty of Sciences of the University of Lisbon.   
 
-## Research Areas
+## Research Interests
 Complexity theory, Circut Complexity, Communication and Query Complexity, 
 Fourier Analysis, Data Structures lower bounds. 
 
