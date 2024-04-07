@@ -17,6 +17,8 @@ website:
         text: Research
       - text: Teaching
         href: teaching.qmd
+      - text: Misc.
+        href: misc.qmd
 format:
   html:
     theme: 
