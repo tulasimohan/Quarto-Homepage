@@ -26,3 +26,20 @@ format:
       dark: [Sketchy, theme-dark.scss]
     css: styles.css
     toc: false
+
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: 
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.samkirkland.com
+        username: tmolli@ciencias.ulisboa.pt
+        password: ${{ secrets.ftp_password }}
