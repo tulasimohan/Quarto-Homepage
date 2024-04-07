@@ -19,3 +19,26 @@ $callout-color-warning: #9d8757;
 $callout-color-caution: #cac6be;
 $callout-color-important: #BB6649;
  
+// Mixins
+
+@mixin shadow($bg: $gray-200, $shadow: $box-shadow) {
+    background-color: $bg;
+    border: none;
+    box-shadow: $shadow;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out, box-shadow .15s ease-in-out, color .15s ease-in-out;
+  }
+  
+  @mixin shadow-outline($bg: $body-bg, $shadow: $box-shadow) {
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    bottom: -.5rem;
+    left: -.5rem;
+    z-index: -1;
+    content: "";
+    background-color: $bg;
+    border: 1px solid rgba($white, .1);
+    box-shadow: $shadow;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out, box-shadow .15s ease-in-out, color .15s ease-in-out;
+  }
+  

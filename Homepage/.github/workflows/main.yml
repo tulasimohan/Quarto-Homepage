@@ -1,7 +1,4 @@
-on:
-  push:
-    branches:
-      - main
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -9,13 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.ftp_host }}
-        username: ${{ secrets.ftp_username }}
+        server: ftp://webserver07.fc.ul.pt
+        username: tmolli@ciencias.ulisboa.pt
         password: ${{ secrets.ftp_password }}
-        local-dir: ./_site/
-        server-dir: ${{ secrets.server_dir }}
