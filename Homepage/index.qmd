@@ -1,16 +1,3 @@
 ---
-title: "GGM PRG Construction"
-subtitle: by Goldreich, Goldwasser, Micali
+title: "Welcome!"
 ---
-
-
-## The Result
-Given be a length doubling PRG $\phi: \{0,1\}^n \to \{0,1\}^{2n}$, we obtain a PRG $G_{\phi}$ which achieves an exponential strech. 
-
-## Construction
-
-$$ G_\phi(y) = \phi_{y_1} \circ \dots \circ \phi_{y_t}(x)$$
-
-## Proof of correctness
-
-By a hybrid argumment.

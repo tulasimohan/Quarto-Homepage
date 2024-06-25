@@ -3,9 +3,9 @@ project:
 
 website:
   title: "Tulasimohan Molli"
-  navbar:
-    background: primary
-    right:
+  sidebar:
+    style: docked
+    contents:
       - href: index.qmd
         text: Home
       - href: about.qmd
@@ -24,3 +24,4 @@ format:
     header-includes: |
       <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tex-gyre-adventor" type="text/css"/>
     css: styles.css
+    mainfont: TeXGyreAdventorRegular
