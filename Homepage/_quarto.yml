@@ -1,10 +1,25 @@
 project:
   type: website
-
+  preview:
+    port: 7777
+  
 website:
   title: "Tulasimohan Molli"
+#  site-url: https://www.neeldhara.com
   navbar:
-    background: primary
+    background: white
+    pinned: false
+    left:
+      - icon: youtube
+#        href: https://www.youtube.com/c/NeeldharaMisra42
+      - icon: linkedin
+#        href: https://www.linkedin.com/in/neeldhara-misra-a54b6920/
+      - icon: github
+#        href: https://github.com/neeldhara
+      - icon: mastodon
+#        href: https://mathstodon.xyz/@neeldhara
+      - icon: rss
+#        href: blog.xml
     right:
       - href: index.qmd
         text: Home
@@ -16,11 +31,19 @@ website:
         href: teaching.qmd
       - text: Misc.
         href: misc.qmd
+
 format:
   html:
     theme: 
-      light: [Sketchy,theme-light.scss]
-      dark: [Sketchy, theme-dark.scss]
-    header-includes: |
-      <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/tex-gyre-adventor" type="text/css"/>
-    css: styles.css
+      - cosmo
+      - custom.scss
+ #   js: scripts.js
+    css: css/styles.css
+    toc: true
+    html-math-method: katex
+    smooth-scroll: true
+    anchor-sections: true
+#    include-after-body: footer.html
+    page-layout: full
+#    filters:
+#      - abstract-section
