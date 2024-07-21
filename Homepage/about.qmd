@@ -6,7 +6,6 @@ about:
   image: images/profile_pic.jpeg
   image-width: 14em
   image-shape: rounded
-  
   links:
     - icon: twitter
       text: twitter
@@ -15,11 +14,12 @@ about:
       text: Github
       href: https://github.com
     - icon: Google Scholar
-      text: Google Scholar
+      text: G Scholar
       href: https://twitter.com
     - icon: DBLP
       text: DBLP
-      href: https://twitter.com
+      href: https://dblp.org/
+css: styles.css
 ---
 
 
