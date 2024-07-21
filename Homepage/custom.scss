@@ -108,26 +108,19 @@
     src: url('fonts/Romttar.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: noto_serif_display;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('fonts/Noto_Serif_Display/static/NotoSerifDisplay-Black.ttf') format('ttf');
-}
 
-
-
-// $primary:  #1d90e2 !default;
-// $body-color: rgb(33, 87, 132) !default;
-// $navbar-hl: black !default;
+$primary:  #1d90e2 !default;
+//  $body-color: rgb(33, 87, 132) !default;
+$navbar-hl: black !default;
 
 $myred: indianred !default;
 $mygreen: darkseagreen !default;
 
-$font-family-base:  'noto_serif_display','heliotrope_3',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular' !default;
+$font-family-base:  'heliotrope_3',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular' !default;
 
-$headings-font-family:  'noto_serif_display','heliotrope_3', 'Prata', 'Roboto', 'Playfair Display', 'Montserrat'    !default;
+$headings-font-family:   'heliotrope_3', 'Prata', 'Roboto', 'Playfair Display', 'Montserrat'  !default;
+
+
 $h3-font-size: 1.24em !default;
 
 $link-color: rgb(4, 122, 6) !default;
