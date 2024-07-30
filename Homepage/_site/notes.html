@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tulasimohan Molli</title>
+<title>Tulasimohan Molli - Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -65,11 +68,82 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-reading-time','listing-categories','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/about.css">
 </head>
 
 <body class="nav-fixed">
@@ -96,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -126,61 +200,157 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles content column-page">
-  <div class="about-entity">
-    <img src="images/profile_pic.jpeg" class="about-image
-  rounded " style="width: 14em;" title="Tulasimohan Molli">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tulasimohan Molli</h1>
+<h1 class="title">Notes</h1>
 </div>
+
+
+
 <div class="quarto-title-meta column-page">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
-  <a href="https://github.com" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-Google Scholar"></i>
-     <span class="about-link-text">G Scholar</span>
-  </a>
-  <a href="https://dblp.org/" class="about-link" rel="" target="">
-    <i class="bi bi-DBLP"></i>
-     <span class="about-link-text">DBLP</span>
-  </a>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Switching Lemma,Circuit Complexity" data-listing-file-modified-sort="1721039060106" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./notes/Switching Lemma/JKR_counter_example.html" class="no-external">Jaikumar’s counter example</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./notes/Switching Lemma/JKR_counter_example.html" class="no-external"></a>
 </div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>Hi!</p>
-<p>I am currently a Postdoctoral Researcher at the University of Lisbon.<br>
-I am working with Prof Bruno Loff on the Hardness of Finding Good Algorithms (project HoFGA). I am a member of the research unit LASIGE at the Faculty of Sciences of the University of Lisbon.</p>
-<section id="research-interests" class="level2">
-<h2 data-anchor-id="research-interests">Research Interests</h2>
-<p>Complexity theory, Circut Complexity, Communication and Query Complexity, Fourier Analysis, Data Structures lower bounds.</p>
-</section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>PhD in Computer Science <br> Tata Institute of Fundmental Research, Mumbai.</p>
-<p>MSc in Computer Science <br> Chennai Mathematical Institute, Chennai.</p>
-<p>BSc(Hons.) in Mathematics and Computer Science <br> Chennai Mathematical Institute, Chennai.</p>
-</section>
-</div></div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Switching Lemma'); return false;">
+Switching Lemma
 </div>
-
-
-
-
-
-</main> <!-- /main -->
+<div class="listing-category" onclick="window.quartoListingCategory('Circuit Complexity'); return false;">
+Circuit Complexity
+</div>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./notes/Switching Lemma/JKR_counter_example.html" class="no-external"></a></p><a href="./notes/Switching Lemma/JKR_counter_example.html" class="no-external">
+<div class="listing-author">
+Tulasi
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Cryptography,PRG" data-listing-date-sort="1712444400000" data-listing-file-modified-sort="1721566222964" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./notes/Crypto/GGM.html" class="no-external">GGM based PRG Construction</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./notes/Crypto/GGM.html" class="no-external">A construction Pseudorandom tables based on GGM consrtuction of Goldreich, Goldwasser, Micali.</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Cryptography'); return false;">
+Cryptography
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('PRG'); return false;">
+PRG
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="./notes/Crypto/GGM.html" class="no-external">
+<div class="listing-date">
+Apr 7, 2024
+</div>
+<div class="listing-author">
+Tulasi
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Switching Lemma,Circuit Complexity" data-listing-date-sort="1711926000000" data-listing-file-modified-sort="1712529132488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./notes/Switching Lemma/AC0_criticality.html" class="no-external">Criticality of <span class="math inline">AC^0</span> formulae</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./notes/Switching Lemma/AC0_criticality.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Switching Lemma'); return false;">
+Switching Lemma
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Circuit Complexity'); return false;">
+Circuit Complexity
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="./notes/Switching Lemma/AC0_criticality.html" class="no-external">
+<div class="listing-date">
+Apr 1, 2024
+</div>
+<div class="listing-author">
+Tulasi
+</div>
+<div class="listing-reading-time">
+2 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Switching Lemma,Circuit Complexity" data-listing-date-sort="1707609600000" data-listing-file-modified-sort="1712529174231" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="892">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./notes/Switching Lemma/demorgan_SL.html" class="no-external">Criticality of De-Morgan formulae</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./notes/Switching Lemma/demorgan_SL.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Switching Lemma'); return false;">
+Switching Lemma
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Circuit Complexity'); return false;">
+Circuit Complexity
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="./notes/Switching Lemma/demorgan_SL.html" class="no-external">
+<div class="listing-date">
+Feb 11, 2024
+</div>
+<div class="listing-author">
+Tulasi
+</div>
+<div class="listing-reading-time">
+5 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -201,6 +371,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

@@ -6,6 +6,7 @@ about:
   image: images/profile_pic.jpeg
   image-width: 14em
   image-shape: rounded
+  image-title: Tulasimohan Molli
   links:
     - icon: twitter
       text: twitter
@@ -19,9 +20,8 @@ about:
     - icon: DBLP
       text: DBLP
       href: https://dblp.org/
-css: styles.css
+css: css/about.css
 ---
-
 
 :::{#hero-heading}
 

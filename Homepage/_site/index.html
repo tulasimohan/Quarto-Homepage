@@ -67,6 +67,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="css/styles.css">
@@ -132,6 +135,44 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="welcome" class="level1">
 <h1>Welcome !</h1>
+<p>This is a page where I amuse myself with all the cool things that I do can with the help of Quarto.</p>
+<p>This also serves as my homepage.</p>
+<p>About Quarto:</p>
+<p>The inspiration for the webpage: Neeldhara’s webpage</p>
+<p>Credits:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    Achampeta([Achampeta Jn])===Vakalapudi([Vakalapudi]) &amp; APSP([APSP]) &amp; ADB([ADB Road])
+
+    ADB===Samarlakota
+    APSP===Sarpavaram([Sarpavaram Jn])
+
+    Vakalapudi===Valasapakala([Valasapakala])
+    
+    Valasapakala===Sarpavaram
+    Sarpavaram=== Nagamallithota([Nagamallithota Jn]) &amp; Gaigolapadu([Gaigolapadu])
+
+    Nagamallithota===Bhanugudi([Bhanugudi Jn])
+    
+    Bhanugudi===RTC([RTC Complex]) &amp; 2town([2 town police station]) 
+    
+    Kondayyapalem([Kondayyapalem gate])===Bhanugudi
+
+    2town===Masjidd([Maseedu center])===Janannaikpur([Jagannadhapuram])
+    2town===Nookalamma([Nookalamma gudi])===RailwaySn([Railway station])
+    Nookalamma===Subbayya([Subbayya Hotel])
+    Subbayya===GGH([Government General Hospital])
+    Gaigolapadu===Kondayyapalem
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
 </section>

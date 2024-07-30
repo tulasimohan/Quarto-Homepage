@@ -35,8 +35,7 @@ website:
 format:
   html:
     theme: 
-      - cosmo
-      - custom.scss
+      light: [cosmo, custom.scss] 
  #   js: scripts.js
     css: css/styles.css
     toc: true
