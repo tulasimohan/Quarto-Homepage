@@ -3,46 +3,10 @@ title: ""
 sidebar: false
 toc: false
 css: css/home.css
-#include-after-body: footer.html
-#page-layout: article
+# include-after-body: footer.html
+# page-layout: article
 # filters:
 #   - imagify  # Optional filter for image processing 
 ---
+
 # Welcome !
-
-
-
-This is a page where I amuse myself with all the cool things that I do can with the help of Quarto. 
-
-This also serves as my homepage. 
-
-About Quarto:
-
-The inspiration for the webpage: Neeldhara's webpage
-
-Credits: 
-
-```{mermaid}
-flowchart LR
-    Achampeta([Achampeta Jn])===Vakalapudi([Vakalapudi]) & APSP([APSP]) & ADB([ADB Road])
-
-    ADB===Samarlakota
-    APSP===Sarpavaram([Sarpavaram Jn])
-
-    Vakalapudi===Valasapakala([Valasapakala])
-    
-    Valasapakala===Sarpavaram
-    Sarpavaram=== Nagamallithota([Nagamallithota Jn]) & Gaigolapadu([Gaigolapadu])
-
-    Nagamallithota===Bhanugudi([Bhanugudi Jn])
-    
-    Bhanugudi===RTC([RTC Complex]) & 2town([2 town police station]) 
-    
-    Kondayyapalem([Kondayyapalem gate])===Bhanugudi
-
-    2town===Masjidd([Maseedu center])===Janannaikpur([Jagannadhapuram])
-    2town===Nookalamma([Nookalamma gudi])===RailwaySn([Railway station])
-    Nookalamma===Subbayya([Subbayya Hotel])
-    Subbayya===GGH([Government General Hospital])
-    Gaigolapadu===Kondayyapalem
-```

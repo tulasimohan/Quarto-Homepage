@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome !",
     "section": "",
-    "text": "Welcome !\nThis is a page where I amuse myself with all the cool things that I do can with the help of Quarto.\nThis also serves as my homepage.\nAbout Quarto:\nThe inspiration for the webpage: Neeldhara’s webpage\nCredits:\n\n\n\n\n\nflowchart LR\n    Achampeta([Achampeta Jn])===Vakalapudi([Vakalapudi]) & APSP([APSP]) & ADB([ADB Road])\n\n    ADB===Samarlakota\n    APSP===Sarpavaram([Sarpavaram Jn])\n\n    Vakalapudi===Valasapakala([Valasapakala])\n    \n    Valasapakala===Sarpavaram\n    Sarpavaram=== Nagamallithota([Nagamallithota Jn]) & Gaigolapadu([Gaigolapadu])\n\n    Nagamallithota===Bhanugudi([Bhanugudi Jn])\n    \n    Bhanugudi===RTC([RTC Complex]) & 2town([2 town police station]) \n    \n    Kondayyapalem([Kondayyapalem gate])===Bhanugudi\n\n    2town===Masjidd([Maseedu center])===Janannaikpur([Jagannadhapuram])\n    2town===Nookalamma([Nookalamma gudi])===RailwaySn([Railway station])\n    Nookalamma===Subbayya([Subbayya Hotel])\n    Subbayya===GGH([Government General Hospital])\n    Gaigolapadu===Kondayyapalem"
+    "text": "Welcome !"
   },
   {
     "objectID": "about.html",
@@ -95,7 +95,7 @@
     "href": "notes.html",
     "title": "Notes",
     "section": "",
-    "text": "Jaikumar’s counter example\n\n\n\n\n\n\nSwitching Lemma\n\n\nCircuit Complexity\n\n\n\n\n\n\nTulasi\n\n\n1 min\n\n\n\n\n\n\n\nGGM based PRG Construction\n\n\nA construction Pseudorandom tables based on GGM consrtuction of Goldreich, Goldwasser, Micali.\n\n\n\nCryptography\n\n\nPRG\n\n\n\n\n\n\nApr 7, 2024\n\n\nTulasi\n\n\n1 min\n\n\n\n\n\n\n\nCriticality of AC^0 formulae\n\n\n\n\n\n\nSwitching Lemma\n\n\nCircuit Complexity\n\n\n\n\n\n\nApr 1, 2024\n\n\nTulasi\n\n\n2 min\n\n\n\n\n\n\n\nCriticality of De-Morgan formulae\n\n\n\n\n\n\nSwitching Lemma\n\n\nCircuit Complexity\n\n\n\n\n\n\nFeb 11, 2024\n\n\nTulasi\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "notes/Switching Lemma/demorgan_SL.html",
