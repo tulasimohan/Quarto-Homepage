@@ -8,5 +8,3 @@ css: css/home.css
 # filters:
 #   - imagify  # Optional filter for image processing 
 ---
-
-# Welcome !
