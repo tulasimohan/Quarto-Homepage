@@ -1,5 +1,5 @@
 ---
-title: "Tulasimohan Molli"
+title: "Tuulasimohan Molli"
 about:
   id: hero-heading
   template: trestles

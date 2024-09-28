@@ -8,9 +8,6 @@ css: css/home.css
 # filters:
 #   - imagify  # Optional filter for image processing 
 ---
-<<<<<<< HEAD
 # Welcome !
 
 
-=======
->>>>>>> 42ba0e188745fa0ffb0b54cee1bddb00c009925c
