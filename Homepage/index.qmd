@@ -3,11 +3,14 @@ title: ""
 sidebar: true
 toc: false
 css: css/home.css
-#include-after-body: footer.html
-#page-layout: article
+# include-after-body: footer.html
+# page-layout: article
 # filters:
 #   - imagify  # Optional filter for image processing 
 ---
+<<<<<<< HEAD
 # Welcome !
 
 
+=======
+>>>>>>> 42ba0e188745fa0ffb0b54cee1bddb00c009925c
