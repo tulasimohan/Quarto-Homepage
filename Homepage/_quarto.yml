@@ -37,7 +37,7 @@ format:
     theme: 
       light: [cosmo, custom.scss] 
  #   js: scripts.js
-    css: css/styles.css
+#    css: css/styles.css
     toc: true
     html-math-method: katex
     smooth-scroll: true
