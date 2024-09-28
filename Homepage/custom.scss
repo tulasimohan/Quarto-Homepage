@@ -108,6 +108,39 @@
     src: url('fonts/Romttar.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: IBMPlexMono;
+    font-weight: Regular;
+    font-stretch: normal;
+    font-display: auto;
+    src: url('fonts/IBMPlexMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IBMPlexMath;
+    font-weight: Regular;
+    font-stretch: normal;
+    font-display: auto;
+    src: url('fonts/IBMPlexMath-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IBMPlexSerif;
+    font-weight: Regular;
+    font-stretch: normal;
+    font-display: auto;
+    src: url('fonts/IBMPlexSerif-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IBMPlexSerif1;
+    font-weight: Medium;
+    font-stretch: normal;
+    font-display: auto;
+    src: url('fonts/IBMPlexSerif-Medium.woff2') format('woff2');
+}
+
+
 
 $primary:  #1d90e2 !default;
 //  $body-color: rgb(33, 87, 132) !default;

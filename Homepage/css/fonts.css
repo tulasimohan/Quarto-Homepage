@@ -105,3 +105,18 @@
     font-display: auto;
     src: url('../fonts/Romttar.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: IBMPlexMono;
+    font-weight: Regular;
+    font-stretch: normal;
+    font-display: auto;
+    src: url('Homepage/fonts/IBMPlexMono-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: IBMPlexMath;
+    font-weight: Regular;
+    font-stretch: normal;
+    font-display: auto;
+    src: url('Homepage/fonts/IBMPlexMath-Regular.woff2') format('woff2');
+}

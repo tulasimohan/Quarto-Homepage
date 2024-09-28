@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome !",
     "section": "",
-    "text": "Welcome !\nThis is a page where I amuse myself with all the cool things that I do can with the help of Quarto.\nThis also serves as my homepage.\nAbout Quarto:\nThe inspiration for the webpage: Neeldhara’s webpage\nCredits:\n\n\n\n\n\nflowchart LR\n    Achampeta([Achampeta Jn])===Vakalapudi([Vakalapudi]) & APSP([APSP]) & ADB([ADB Road])\n\n    ADB===Samarlakota\n    APSP===Sarpavaram([Sarpavaram Jn])\n\n    Vakalapudi===Valasapakala([Valasapakala])\n    \n    Valasapakala===Sarpavaram\n    Sarpavaram=== Nagamallithota([Nagamallithota Jn]) & Gaigolapadu([Gaigolapadu])\n\n    Nagamallithota===Bhanugudi([Bhanugudi Jn])\n    \n    Bhanugudi===RTC([RTC Complex]) & 2town([2 town police station]) \n    \n    Kondayyapalem([Kondayyapalem gate])===Bhanugudi\n\n    2town===Masjidd([Maseedu center])===Janannaikpur([Jagannadhapuram])\n    2town===Nookalamma([Nookalamma gudi])===RailwaySn([Railway station])\n    Nookalamma===Subbayya([Subbayya Hotel])\n    Subbayya===GGH([Government General Hospital])\n    Gaigolapadu===Kondayyapalem"
+    "text": "Welcome !"
   },
   {
     "objectID": "about.html",
