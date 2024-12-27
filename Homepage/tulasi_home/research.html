@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tuulasimohan Molli – Tulasimohan Molli</title>
+<title>research – Tulasimohan Molli</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,11 +33,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d4be39be5653887912c2f879c3e2cfcb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +68,50 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<link rel="stylesheet" href="css/about.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-fixed">
@@ -95,11 +138,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -121,63 +164,125 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#papers" id="toc-papers" class="nav-link active" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#theses-and-reports" id="toc-theses-and-reports" class="nav-link" data-scroll-target="#theses-and-reports">Theses and Reports</a></li>
+  <li><a href="#informal-write-ups" id="toc-informal-write-ups" class="nav-link" data-scroll-target="#informal-write-ups">Informal write-ups</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="images/profile_pic.jpeg" class="about-image
-  rounded " style="width: 14em;" title="Tulasimohan Molli">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Tuulasimohan Molli</h1>
+<section id="papers" class="level1">
+<h1>Papers</h1>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
-  <a href="https://github.com" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-Google Scholar"></i>
-     <span class="about-link-text">G Scholar</span>
-  </a>
-  <a href="https://dblp.org/" class="about-link" rel="" target="">
-    <i class="bi bi-DBLP"></i>
-     <span class="about-link-text">DBLP</span>
-  </a>
+<div class="callout-title-container flex-fill">
+<strong>Criticality of <span class="math inline">AC^0</span> formulae.</strong>
 </div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>Hi!</p>
-<p>I am currently a Postdoctoral Researcher at the University of Lisbon.<br>
-I am working with Prof Bruno Loff on the Hardness of Finding Good Algorithms (project HoFGA). I am a member of the research unit LASIGE at the Faculty of Sciences of the University of Lisbon.</p>
-<section id="research-interests" class="level2">
-<h2 data-anchor-id="research-interests">Research Interests</h2>
-<p>Complexity theory, Circut Complexity, Communication and Query Complexity, Fourier Analysis, Data Structures lower bounds.</p>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Prahladh Harsha and Ashutosh Shankar <br> <a href="">CCC</a> | <a href="">arXiv</a></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Tight Chang’s lemma type bounds for Boolean functions.</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Sourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Manaswi Paraashar, Swagato Sanyal. <br> <a href="">FSTTCS</a> | <a href="">arXiv</a></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Probabilistic degree of OR over the Reals.</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Siddharth Bhandari and Prahladh Harsha. <br> <a href="">FSTTCS</a> | <a href="">eccc</a> | <a href="">RSA Journal</a></p>
+</div>
+</div>
 </section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>PhD in Computer Science <br> Tata Institute of Fundmental Research, Mumbai.</p>
-<p>MSc in Computer Science <br> Chennai Mathematical Institute, Chennai.</p>
-<p>BSc(Hons.) in Mathematics and Computer Science <br> Chennai Mathematical Institute, Chennai.</p>
+<section id="theses-and-reports" class="level1">
+<h1>Theses and Reports</h1>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>PhD Thesis: On Complexity Measures of Boolean Functions</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>under the guidance of Prof.&nbsp;Prahladh Harsha at Tata Institute of Fundamental Research, Mumbai.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Master Project: Structural results and applications to Arithmetic Circuit Complexity</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>under the guidance of Prof.&nbsp;Srikanth Srinivasan, as a part of my Master’s Thesis at Chennai Mathematical Institute.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Qualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>under the guidance of Prof.&nbsp;Arkadev Chattopadhyay, at the School of Technology and Computer Science, Tata Institute of Fundamental Research.</p>
+</div>
+</div>
 </section>
-</div></div>
+<section id="informal-write-ups" class="level1">
+<h1>Informal write-ups</h1>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Data Structure lower bounds</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Prof.&nbsp;Bruno Loff at University of Lisbon.</p>
+</div>
 </div>
 
 
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -200,6 +305,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -255,8 +367,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -367,7 +477,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
