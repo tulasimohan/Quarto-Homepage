@@ -8,9 +8,9 @@ about:
   image-shape: rounded
   image-title: Tulasimohan Molli
   links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com
+    # - icon: twitter
+    #   text: twitter
+    #   href: https://twitter.com
     - icon: github
       text: Github
       href: https://github.com
@@ -25,25 +25,26 @@ css: css/about.css
 
 :::{#hero-heading}
 
-Hi! 
+I am currently a Postdoctoral Researcher in the Department of Mathematics at the University of Lisbon.  
+I am working with [Bruno Loff]() on the Hardness of Finding Good Algorithms (project [HoFGA]()). I am a member of the research unit [LASIGE]() at the [Faculty of Sciences]() of the [University of Lisbon]().   
 
-I am currently a Postdoctoral Researcher at the University of Lisbon.  
-I am working with Prof Bruno Loff on the Hardness of Finding Good Algorithms (project HoFGA). I am a member of the research unit LASIGE at the Faculty of Sciences of the University of Lisbon.   
+I completed my PhD under the guidance of [Prahladh Harhsa]() at TIFR, Mumbai. 
+
+    
 
 ## Research Interests
-Complexity theory, Circut Complexity, Communication and Query Complexity, 
-Fourier Analysis, Data Structures lower bounds. 
+Broadly interested in Complexity theory, in particular Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures lower bounds. 
 
 
 ## Education
 
-PhD in Computer Science </br>
+PhD in Computer Science | 2023 </br>
 Tata Institute of Fundmental Research, Mumbai. 
 
-MSc in Computer Science </br>
+MSc in Computer Science | 2014 </br>
 Chennai Mathematical Institute, Chennai. 
 
-BSc(Hons.) in Mathematics and Computer Science </br>
+BSc(Hons.) in Mathematics and Computer Science | 2012 </br>
 Chennai Mathematical Institute, Chennai.  
 
 :::

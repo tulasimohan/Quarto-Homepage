@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tulasimohan Molli</title>
+<title>publications – Tulasimohan Molli</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,9 +67,51 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/home.css">
 </head>
 
 <body class="nav-fixed">
@@ -114,10 +156,17 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./misc.html"> 
-<span class="menu-text">Misc.</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-misc." role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Misc.</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc.">    
+        <li>
+    <a class="dropdown-item" href="./portugal.html">
+ <span class="dropdown-text">Portugal</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -129,15 +178,122 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#papers" id="toc-papers" class="nav-link active" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#theses-and-reports" id="toc-theses-and-reports" class="nav-link" data-scroll-target="#theses-and-reports">Theses and Reports</a></li>
+  <li><a href="#informal-write-ups" id="toc-informal-write-ups" class="nav-link" data-scroll-target="#informal-write-ups">Informal write-ups</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<section id="welcome" class="level1">
-<h1>Welcome !</h1>
+<section id="papers" class="level1">
+<h1>Papers</h1>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Criticality of <span class="math inline">AC^0</span> formulae.</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Prahladh Harsha and Ashutosh Shankar <br> <a href="">CCC</a> | <a href="">arXiv</a></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Tight Chang’s lemma type bounds for Boolean functions.</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Sourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Manaswi Paraashar, Swagato Sanyal. <br> <a href="">FSTTCS</a> | <a href="">arXiv</a></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Probabilistic degree of OR over the Reals.</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Siddharth Bhandari and Prahladh Harsha. <br> <a href="">FSTTCS</a> | <a href="">eccc</a> | <a href="">RSA Journal</a></p>
+</div>
+</div>
+</section>
+<section id="theses-and-reports" class="level1">
+<h1>Theses and Reports</h1>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>PhD Thesis: On Complexity Measures of Boolean Functions</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>under the guidance of Prof.&nbsp;Prahladh Harsha at Tata Institute of Fundamental Research, Mumbai.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Master Project: Structural results and applications to Arithmetic Circuit Complexity</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>under the guidance of Prof.&nbsp;Srikanth Srinivasan, as a part of my Master’s Thesis at Chennai Mathematical Institute.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Qualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>under the guidance of Prof.&nbsp;Arkadev Chattopadhyay, at the School of Technology and Computer Science, Tata Institute of Fundamental Research.</p>
+</div>
+</div>
+</section>
+<section id="informal-write-ups" class="level1">
+<h1>Informal write-ups</h1>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Data Structure lower bounds</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>with Prof.&nbsp;Bruno Loff at University of Lisbon.</p>
+</div>
+</div>
 
 
 </section>

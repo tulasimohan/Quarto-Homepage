@@ -9,7 +9,7 @@ website:
 #  site-url: https://www.neeldhara.com
   navbar:
     background: white
-    pinned: false
+    pinned: true
     left:
       - icon: youtube
 #        href: https://www.youtube.com/c/NeeldharaMisra42
@@ -22,23 +22,29 @@ website:
       - icon: rss
 #        href: blog.xml
     right:
-      - href: index.qmd
-        text: Home
+      # - href: index.qmd
+      #   text: Home
       - href: about.qmd
         text: About
-      - href: research.qmd
-        text: Research
+      - text: Publications
+        menu:
+          - text: Papers 
+            href: publications.qmd
+          - text: Informal
+            href: notes.qmd 
       - text: Teaching
         href: teaching.qmd
       - text: Misc.
-        href: misc.qmd
+        menu: 
+          - href: portugal.qmd
+            text: Portugal
 
 format:
   html:
     theme: 
       light: [cosmo, custom.scss] 
  #   js: scripts.js
-#    css: css/styles.css
+    css: css/styles.css
     toc: true
     html-math-method: katex
     smooth-scroll: true

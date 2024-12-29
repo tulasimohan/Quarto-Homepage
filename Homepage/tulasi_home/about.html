@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -68,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/about.css">
 </head>
 
@@ -91,25 +91,39 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Publications</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-publications">    
+        <li>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">Papers</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./notes.html">
+ <span class="dropdown-text">Informal</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./misc.html"> 
-<span class="menu-text">Misc.</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-misc." role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Misc.</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc.">    
+        <li>
+    <a class="dropdown-item" href="./portugal.html">
+ <span class="dropdown-text">Portugal</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -140,10 +154,6 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header>
     <div class="about-links">
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
   <a href="https://github.com" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">Github</span>
@@ -159,18 +169,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<p>Hi!</p>
-<p>I am currently a Postdoctoral Researcher at the University of Lisbon.<br>
-I am working with Prof Bruno Loff on the Hardness of Finding Good Algorithms (project HoFGA). I am a member of the research unit LASIGE at the Faculty of Sciences of the University of Lisbon.</p>
+<p>I am currently a Postdoctoral Researcher in the Department of Mathematics at the University of Lisbon.<br>
+I am working with <a href="">Bruno Loff</a> on the Hardness of Finding Good Algorithms (project <a href="">HoFGA</a>). I am a member of the research unit <a href="">LASIGE</a> at the <a href="">Faculty of Sciences</a> of the <a href="">University of Lisbon</a>.</p>
+<p>I completed my PhD under the guidance of <a href="">Prahladh Harhsa</a> at TIFR, Mumbai.</p>
 <section id="research-interests" class="level2">
 <h2 data-anchor-id="research-interests">Research Interests</h2>
-<p>Complexity theory, Circut Complexity, Communication and Query Complexity, Fourier Analysis, Data Structures lower bounds.</p>
+<p>Broadly interested in Complexity theory, in particular Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures lower bounds.</p>
 </section>
 <section id="education" class="level2">
 <h2 data-anchor-id="education">Education</h2>
-<p>PhD in Computer Science <br> Tata Institute of Fundmental Research, Mumbai.</p>
-<p>MSc in Computer Science <br> Chennai Mathematical Institute, Chennai.</p>
-<p>BSc(Hons.) in Mathematics and Computer Science <br> Chennai Mathematical Institute, Chennai.</p>
+<p>PhD in Computer Science | 2023 <br> Tata Institute of Fundmental Research, Mumbai.</p>
+<p>MSc in Computer Science | 2014 <br> Chennai Mathematical Institute, Chennai.</p>
+<p>BSc(Hons.) in Mathematics and Computer Science | 2012 <br> Chennai Mathematical Institute, Chennai.</p>
 </section>
 </div></div>
 </div>
