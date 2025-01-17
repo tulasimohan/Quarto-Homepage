@@ -1,6 +1,6 @@
 ---
 title: ""
-sidebar: true
+sidebar: false
 toc: false
 css: css/home.css
 # include-after-body: footer.html

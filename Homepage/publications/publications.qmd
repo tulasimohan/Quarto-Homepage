@@ -1,0 +1,8 @@
+---
+page-layout: article
+sidebar: false
+---
+
+{{< include papers.qmd >}}
+
+{{< include theses.qmd >}}

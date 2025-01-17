@@ -1,5 +1,5 @@
 project:
-  output-dir: tulasi_home
+  output-dir: tulasi_site
   type: website
   preview:
     port: 7777
@@ -13,31 +13,40 @@ website:
     left:
       - icon: youtube
 #        href: https://www.youtube.com/c/NeeldharaMisra42
-      - icon: linkedin
-#        href: https://www.linkedin.com/in/neeldhara-misra-a54b6920/
-      - icon: github
-#        href: https://github.com/neeldhara
-      - icon: mastodon
-#        href: https://mathstodon.xyz/@neeldhara
       - icon: rss
 #        href: blog.xml
     right:
-      # - href: index.qmd
-      #   text: Home
-      - href: about.qmd
-        text: About
-      - text: Publications
-        menu:
-          - text: Papers 
-            href: publications.qmd
-          - text: Informal
-            href: notes.qmd 
-      - text: Teaching
-        href: teaching.qmd
-      - text: Misc.
-        menu: 
-          - href: portugal.qmd
-            text: Portugal
+      - href: index.qmd
+        text: Home
+      # - href: about.qmd
+      #   text: About
+      # - text: Research
+      #   menu:
+      #     - text: Publications 
+      #       href: publications/publications.qmd
+      #     - text: Informal
+      #       href: notes.qmd 
+      #     - text: Teaching
+      #       href: teaching.qmd
+      # - text: Misc.
+      #   menu: 
+      #     - href: portugal.qmd
+      #       text: Portugal
+  sidebar:
+    - text: "Data Structure LBs"
+      contents: docs
+  page-footer: 
+    left: >-
+      &#169; 2025 Tulasimohan Molli &#8729; Made with [Quarto](https://quarto.org). 
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: linkedin
+        href: https://www.linkedin.com
+      - icon: mastodon
+        href: https://mathstodon.xyz/@neeldhara
+      - icon: bluesky
+        href: https://bsky.app/
 
 format:
   html:
@@ -49,7 +58,7 @@ format:
     html-math-method: katex
     smooth-scroll: true
     anchor-sections: true
-#    include-after-body: footer.html
+    # include-after-body: footer.html
     page-layout: full
-#    filters:
-#      - abstract-section
+    # filters:
+    #   - abstract-section

@@ -1,11 +1,12 @@
 ---
 title: Notes
-toc: false
+sidebar: true
+toc: true
 listing:
-  contents: notes  
+  contents: "docs"  
   sort: "date desc"
   type: default
-  categories: false
+  categories: true
   sort-ui: false
   filter-ui: false
   fields: [date, title, reading-time, categories,author]

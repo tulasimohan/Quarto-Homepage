@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Hardness of finding good Data Structuress – Tulasimohan Molli</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d4be39be5653887912c2f879c3e2cfcb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Tulasimohan Molli</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="../publications/publications.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../publications/notes.html">
+ <span class="dropdown-text">Informal</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../teaching.html">
+ <span class="dropdown-text">Teaching</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-misc." role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Misc.</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc.">    
+        <li>
+    <a class="dropdown-item" href="../portugal.html">
+ <span class="dropdown-text">Portugal</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../docs/KLMS manuscript.html">Hardness of finding good Data Structuress</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../docs/KLMS manuscript.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Hardness of finding good Data Structuress</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">1. Introduction</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries">2. Preliminaries</a>
+  <ul class="collapse">
+  <li><a href="#data-structures-in-the-cell-probe-model" id="toc-data-structures-in-the-cell-probe-model" class="nav-link" data-scroll-target="#data-structures-in-the-cell-probe-model">Data structures in the cell-probe model</a></li>
+  <li><a href="#what-qualifies-as-a-natural-proof" id="toc-what-qualifies-as-a-natural-proof" class="nav-link" data-scroll-target="#what-qualifies-as-a-natural-proof">What qualifies as a natural proof?</a></li>
+  <li><a href="#communication-complexity" id="toc-communication-complexity" class="nav-link" data-scroll-target="#communication-complexity">Communication Complexity</a></li>
+  </ul></li>
+  <li><a href="#a-natural-proofs-barrier-against-static-data-structure-lower-bounds" id="toc-a-natural-proofs-barrier-against-static-data-structure-lower-bounds" class="nav-link" data-scroll-target="#a-natural-proofs-barrier-against-static-data-structure-lower-bounds">3. A natural proofs barrier against static data-structure lower-bounds</a>
+  <ul class="collapse">
+  <li><a href="#local-prgs" id="toc-local-prgs" class="nav-link" data-scroll-target="#local-prgs">Local PRGs</a></li>
+  <li><a href="#a-natural-proofs-barrier-against-static-data-structure-lower-bounds-1" id="toc-a-natural-proofs-barrier-against-static-data-structure-lower-bounds-1" class="nav-link" data-scroll-target="#a-natural-proofs-barrier-against-static-data-structure-lower-bounds-1">A natural proofs barrier against static data-structure lower-bounds</a></li>
+  <li><a href="#candidates-for-local-prgs" id="toc-candidates-for-local-prgs" class="nav-link" data-scroll-target="#candidates-for-local-prgs">Candidates for local PRGs</a></li>
+  </ul></li>
+  <li><a href="#claim-all-known-static-data-structure-lower-bounds-can-be-proven-by-natural-proofs" id="toc-claim-all-known-static-data-structure-lower-bounds-can-be-proven-by-natural-proofs" class="nav-link" data-scroll-target="#claim-all-known-static-data-structure-lower-bounds-can-be-proven-by-natural-proofs">4.Claim: All known static data-structure lower-bounds can be proven by natural proofs</a>
+  <ul class="collapse">
+  <li><a href="#the-richness-method" id="toc-the-richness-method" class="nav-link" data-scroll-target="#the-richness-method">The richness method</a></li>
+  <li><a href="#generalized-richness-method-patrascu-and-thorup" id="toc-generalized-richness-method-patrascu-and-thorup" class="nav-link" data-scroll-target="#generalized-richness-method-patrascu-and-thorup">Generalized richness method (Patrascu and Thorup?)</a></li>
+  <li><a href="#cell-sampling-arguments" id="toc-cell-sampling-arguments" class="nav-link" data-scroll-target="#cell-sampling-arguments">Cell sampling arguments</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">?</a></li>
+  </ul></li>
+  <li><a href="#is-there-a-natural-proofs-barrier-against-dynamic-data-structure-lower-bounds" id="toc-is-there-a-natural-proofs-barrier-against-dynamic-data-structure-lower-bounds" class="nav-link" data-scroll-target="#is-there-a-natural-proofs-barrier-against-dynamic-data-structure-lower-bounds">5.Is there a natural proofs barrier against dynamic data-structure lower-bounds?</a>
+  <ul class="collapse">
+  <li><a href="#preliminaries-on-dynamic-data-structures" id="toc-preliminaries-on-dynamic-data-structures" class="nav-link" data-scroll-target="#preliminaries-on-dynamic-data-structures">5.1 Preliminaries on dynamic data structures</a></li>
+  <li><a href="#locally-updatable-local-prgs-and-a-natural-proofs-barrier-for-dynamic-data-structures" id="toc-locally-updatable-local-prgs-and-a-natural-proofs-barrier-for-dynamic-data-structures" class="nav-link" data-scroll-target="#locally-updatable-local-prgs-and-a-natural-proofs-barrier-for-dynamic-data-structures">5.2 Locally-updatable local PRGs and a natural proofs barrier for dynamic data-structures</a></li>
+  <li><a href="#some-not-very-convincing-candidates" id="toc-some-not-very-convincing-candidates" class="nav-link" data-scroll-target="#some-not-very-convincing-candidates">5.3 Some not-very convincing candidates</a></li>
+  <li><a href="#low-distance-local-prgs-on-the-line" id="toc-low-distance-local-prgs-on-the-line" class="nav-link" data-scroll-target="#low-distance-local-prgs-on-the-line">5.4 Low-distance local PRGs on the line</a></li>
+  <li><a href="#low-distance-local-prgs-on-the-cube" id="toc-low-distance-local-prgs-on-the-cube" class="nav-link" data-scroll-target="#low-distance-local-prgs-on-the-cube">5.5 Low-distance local PRGs on the cube</a></li>
+  <li><a href="#wanted-a-natural-proof-against-a-random-function" id="toc-wanted-a-natural-proof-against-a-random-function" class="nav-link" data-scroll-target="#wanted-a-natural-proof-against-a-random-function">5.6 Wanted: a natural proof against a random function</a></li>
+  </ul></li>
+  <li><a href="#claim-all-known-dynamic-data-structure-lower-bounds-can-be-proven-by-natural-proofs" id="toc-claim-all-known-dynamic-data-structure-lower-bounds-can-be-proven-by-natural-proofs" class="nav-link" data-scroll-target="#claim-all-known-dynamic-data-structure-lower-bounds-can-be-proven-by-natural-proofs">6. Claim: All known dynamic data-structure lower-bounds can be proven by natural proofs</a>
+  <ul class="collapse">
+  <li><a href="#the-chronogram-method" id="toc-the-chronogram-method" class="nav-link" data-scroll-target="#the-chronogram-method">The chronogram method</a></li>
+  <li><a href="#patrascu-and-demaines-information-transfer-technique" id="toc-patrascu-and-demaines-information-transfer-technique" class="nav-link" data-scroll-target="#patrascu-and-demaines-information-transfer-technique">Patrascu and Demaine’s information transfer technique</a></li>
+  <li><a href="#brody-and-larsens-lower-bounds-against-non-adaptive-data-structures" id="toc-brody-and-larsens-lower-bounds-against-non-adaptive-data-structures" class="nav-link" data-scroll-target="#brody-and-larsens-lower-bounds-against-non-adaptive-data-structures">Brody and Larsen’s Lower-bounds against non-adaptive data-structures</a></li>
+  <li><a href="#lower-bounds-against-polynomial-evaluation-cell-sampling-plus-chronogram" id="toc-lower-bounds-against-polynomial-evaluation-cell-sampling-plus-chronogram" class="nav-link" data-scroll-target="#lower-bounds-against-polynomial-evaluation-cell-sampling-plus-chronogram">Lower-bounds against polynomial evaluation (cell sampling plus chronogram)</a></li>
+  <li><a href="#larsen-and-yus-n32lower-bound-against-dynamic-reachability" id="toc-larsen-and-yus-n32lower-bound-against-dynamic-reachability" class="nav-link" data-scroll-target="#larsen-and-yus-n32lower-bound-against-dynamic-reachability">Larsen and Yu’s $(n)^{3/2}lower-bound against dynamic reachability</a></li>
+  </ul></li>
+  <li><a href="#online-problems-like-omv" id="toc-online-problems-like-omv" class="nav-link" data-scroll-target="#online-problems-like-omv">Online problems like OMv?</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Hardness of finding good Data Structuress</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+</section>
+<section id="preliminaries" class="level2">
+<h2 class="anchored" data-anchor-id="preliminaries">2. Preliminaries</h2>
+<section id="data-structures-in-the-cell-probe-model" class="level3">
+<h3 class="anchored" data-anchor-id="data-structures-in-the-cell-probe-model">Data structures in the cell-probe model</h3>
+<blockquote class="blockquote">
+<p>[!def] Static Data Structure Problem (Static DSP) A Static Data Structure Problem is given by the tuple <span class="math inline">(D,Q,A,f)</span> where - <span class="math inline">D</span> is the domain of possible data, - <span class="math inline">Q</span> is the domain of possible queries, - <span class="math inline">A</span> is the set of possible answers and - <span class="math inline">f: Q \times D \to A</span> is a map where <span class="math inline">f(x, y)</span> is the answer to query <span class="math inline">x</span> about data <span class="math inline">y</span>. ^920054</p>
+</blockquote>
+<p>The Cell Probe Model defined by Yao ~ is a deterministic model for Data Structures useful is proving lower bounds. In this model, the data is preprocessed and stored in <span class="math inline">s</span> memory cells each capable of holding words of <span class="math inline">w</span> bits. Each query is modelled as a decision tree which in each time step probes a memory location and based on the answer decides which location to probe next.</p>
+<p>A solution with parameters <span class="math inline">s</span>, <span class="math inline">b</span>, and <span class="math inline">t</span> is a method of storing any <span class="math inline">y \in D</span> as a data structure <span class="math inline">\phi(y)</span> in the memory of a random access machine, using <span class="math inline">s</span> memory cells, each containing <span class="math inline">w</span> bits, so that any query in <span class="math inline">Q</span> can be answered by accessing at most <span class="math inline">t</span> memory cells.</p>
+<blockquote class="blockquote">
+<p>[!def] Solution/ Scheme (s,w,t) A <span class="math inline">(s,w,t)</span> Solution to a Static Data Structure Problem <span class="math inline">(D,Q,f)</span> is given by the tuple <span class="math inline">(s,t,\phi,\{Q_i\})</span> where - <span class="math inline">\phi: D \to [2^w]^s</span> is an encoding map - <span class="math inline">Q_i</span> is a decision tree of depth at most <span class="math inline">t</span> for each query <span class="math inline">i \in Q</span>. ^873ea3</p>
+</blockquote>
+<p>Let <span class="math inline">P = (D,Q,f)</span> be a DSP. Under some fixed ordering the Data Domain <span class="math inline">D</span> and Query Domain, each Static DSP can be represented using a table called the whose rows are labelled by the queries from <span class="math inline">Q</span> and the columns are labelled by the data points/datum from <span class="math inline">D</span>.<br>
+Suppose the table has <span class="math inline">r = |D|</span> rows and <span class="math inline">c = |D|</span> columns, the is said to be <span class="math inline">r \times c</span>.</p>
+</section>
+<section id="what-qualifies-as-a-natural-proof" class="level3">
+<h3 class="anchored" data-anchor-id="what-qualifies-as-a-natural-proof">What qualifies as a natural proof?</h3>
+</section>
+<section id="communication-complexity" class="level3">
+<h3 class="anchored" data-anchor-id="communication-complexity">Communication Complexity</h3>
+<p>Communication complexity studies the number of bits of communication needed to compute a function in a game where the input is shared between the players. Typically the number of players is 2 unless specified oterwise.</p>
+<p>In this model, the two players Alice and Bob are trying to compute a function <span class="math inline">f: X \times Y \to A</span>. Alice gets an input <span class="math inline">x \in X</span> and Bob gets an input <span class="math inline">y \in Y</span>.</p>
+<ul>
+<li>Protocol</li>
+<li>Transcript</li>
+<li>Protocol tree</li>
+</ul>
+<blockquote class="blockquote">
+<p>[!def] Communication matrix Identify <span class="math inline">f</span> with the matrix <span class="math inline">M</span> with <span class="math inline">M_{x, y}= f (x, y)</span>; i.e., index the rows by Alice’s possible inputs, and the columns by Bob’s possible inputs.</p>
+</blockquote>
+<ul>
+<li>Combinatorial rectangle</li>
+<li>Rank</li>
+<li>Discrepancy</li>
+</ul>
+<section id="asymmetric-communication" class="level4">
+<h4 class="anchored" data-anchor-id="asymmetric-communication">Asymmetric Communication</h4>
+<p>Miltersen~ considered a Communication game from a Static Data Structure Problem to prove Static Data Structure lower bounds for Polynomial Evaluation. This technique was subsequently distilled and used by Miltersen, Nisan, Safra, Wigderson~ to prove lower bounds for other data structures.</p>
+<p>Note that the inputs of Alice and Bob in the Miltersen’s game are not of the same length and typically Alice’s input is much smaller than Bob’s input.</p>
+<p>In such a scenario, keeping track of the total communication is not very useful as it is bounded by Alice’s input length since Alice can send her input to Bob and Bob can compute the function. However, the problem still remains interesting if we restrict Alice’s communication.</p>
+<p>Therefore, it is natural to track the communication of Alice and Bob seperately in the Asymmetric setting.</p>
+<p>We keep track of the number of bits Alice sends to Bob and the number of bits Bob sends to Alice seperately.</p>
+<blockquote class="blockquote">
+<p>[!def] <span class="math inline">[a,b]</span>-protocol An <span class="math inline">[a, b]</span>-protocol for <span class="math inline">f</span> is a protocol where the total number of bits that Alice sends Bob is at most <span class="math inline">a</span> and the total number of bits that Bob sends Alice is at most <span class="math inline">b</span>. ^d55d28</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>[!def] <span class="math inline">[t,a,b]^A</span>-protocol A <span class="math inline">[t, a, b]^A</span>-protocol for <span class="math inline">f</span> is a protocol where each of Alice’s messages contains at most a bits and each of Bob’s messages contains at most <span class="math inline">b</span> bits and at most <span class="math inline">t</span> messages are sent, with Alice sending the first message. A <span class="math inline">[t, a, b]^B</span> protocol is defined similarly. ^7fea2b</p>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="a-natural-proofs-barrier-against-static-data-structure-lower-bounds" class="level2">
+<h2 class="anchored" data-anchor-id="a-natural-proofs-barrier-against-static-data-structure-lower-bounds">3. A natural proofs barrier against static data-structure lower-bounds</h2>
+<section id="local-prgs" class="level3">
+<h3 class="anchored" data-anchor-id="local-prgs">Local PRGs</h3>
+</section>
+<section id="a-natural-proofs-barrier-against-static-data-structure-lower-bounds-1" class="level3">
+<h3 class="anchored" data-anchor-id="a-natural-proofs-barrier-against-static-data-structure-lower-bounds-1">A natural proofs barrier against static data-structure lower-bounds</h3>
+<p>here talk about table</p>
+</section>
+<section id="candidates-for-local-prgs" class="level3">
+<h3 class="anchored" data-anchor-id="candidates-for-local-prgs">Candidates for local PRGs</h3>
+</section>
+</section>
+<section id="claim-all-known-static-data-structure-lower-bounds-can-be-proven-by-natural-proofs" class="level2">
+<h2 class="anchored" data-anchor-id="claim-all-known-static-data-structure-lower-bounds-can-be-proven-by-natural-proofs">4.Claim: All known static data-structure lower-bounds can be proven by natural proofs</h2>
+<section id="the-richness-method" class="level3">
+<h3 class="anchored" data-anchor-id="the-richness-method">The richness method</h3>
+<blockquote class="blockquote">
+<p>[!def] <span class="math inline">(u,v)</span>-richness A matrix <span class="math inline">M</span> is <span class="math inline">(u, v)</span>-rich if at least <span class="math inline">v</span> columns contain at least <span class="math inline">u</span> 1-entries. ^02c2c8 A communication problem <span class="math inline">f</span> is <span class="math inline">(u,v)</span>-rich if iff its Communication matrix <span class="math inline">M_f</span> is <span class="math inline">(u,v)</span>-rich.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>[!lem] Lemma 5 Richness lemma Let <span class="math inline">f</span> be a <span class="math inline">(u, v)</span>-rich problem. If <span class="math inline">f</span> has a deterministic <span class="math inline">[a, b]</span>-protocol, then <span class="math inline">f</span> contains a submatrix of dimensions at least <span class="math inline">u/2^{a+2} \times v^{a+b+2}</span> containing only 1-entries. ^09a188</p>
+</blockquote>
+</section>
+<section id="generalized-richness-method-patrascu-and-thorup" class="level3">
+<h3 class="anchored" data-anchor-id="generalized-richness-method-patrascu-and-thorup">Generalized richness method (Patrascu and Thorup?)</h3>
+</section>
+<section id="cell-sampling-arguments" class="level3">
+<h3 class="anchored" data-anchor-id="cell-sampling-arguments">Cell sampling arguments</h3>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">?</h3>
+</section>
+</section>
+<section id="is-there-a-natural-proofs-barrier-against-dynamic-data-structure-lower-bounds" class="level2">
+<h2 class="anchored" data-anchor-id="is-there-a-natural-proofs-barrier-against-dynamic-data-structure-lower-bounds">5.Is there a natural proofs barrier against dynamic data-structure lower-bounds?</h2>
+<section id="preliminaries-on-dynamic-data-structures" class="level3">
+<h3 class="anchored" data-anchor-id="preliminaries-on-dynamic-data-structures">5.1 Preliminaries on dynamic data structures</h3>
+<p><span class="math inline">\newcommand{\N}{\mathbb{N}}</span> &gt;[!def] Update Graph &gt;Let <span class="math inline">m \in \N</span>. &gt;An <em>update graph with <span class="math inline">m</span> updates</em> is a directed graph where every node <span class="math inline">v</span> has out-degree <span class="math inline">U</span>, and each outgoing edge from <span class="math inline">v</span> is &gt;uniquely labelled in <span class="math inline">[U]</span>. Given a node <span class="math inline">v</span>, and a number <span class="math inline">i \in [m]</span>, we let <span class="math inline">u_i(v)</span> be the node such that <span class="math inline">(v, u_i(v))</span> has label <span class="math inline">i</span>. W &gt;say <span class="math inline">w = u_i(v)</span> is obtained from <span class="math inline">v</span> by applying the <span class="math inline">i</span>-th update.</p>
+<p>^f8ad12</p>
+<p><span class="math inline">\newcommand{\ZO}{\{0,1\}}</span></p>
+<blockquote class="blockquote">
+<p>[!def] Skeleton The of a dynamic data-structure problem is a tuple <span class="math inline">(n, m, G)</span>, where <span class="math inline">n \in \N</span> is the number of queries, <span class="math inline">m \in \N</span> is the number of updates, and <span class="math inline">G</span> is an update graph with <span class="math inline">m</span> updates.</p>
+<p>Given a skeleton <span class="math inline">S = (n, m, G)</span>, a with skeleton <span class="math inline">S</span>, is a map <span class="math inline">T: V(G) \times [n] \to \ZO</span>. For <span class="math inline">v \in V(G)</span>, we write <span class="math inline">q_i(v) = T(v,i)</span>. Then, a Boolean dynamic data-structure problem is a tuple <span class="math inline">P = (n, m, G, T)</span>, where <span class="math inline">(n,m,G)</span> is a skeleton and <span class="math inline">T</span> a table.</p>
+</blockquote>
+<p>^abe5f1</p>
+<blockquote class="blockquote">
+<p>[!def] Dynamic Data Structure Problem <span class="math inline">P = (n,M,G,T)</span></p>
+</blockquote>
+<p>^714b4c</p>
+<p>Let <span class="math inline">P = (n,m,G,T)</span> be a dynamic data structure problem.</p>
+<blockquote class="blockquote">
+<p>[!def] Dynamic Data Structure Scheme A (history-independent) , or , for <span class="math inline">P</span> is a tuple <span class="math inline">A = (w,s,t_u, t_q, E,\{U_i\},\{Q_i\})</span>, where: - <span class="math inline">E:V(G) \to (\ZO^w)^s</span> is called the . - <span class="math inline">w \in \N</span> is called the , and <span class="math inline">s \in \N</span> is called the of the solution. - <span class="math inline">t_u \in \N</span> is called the , and <span class="math inline">t_q \in \N</span> the . - <span class="math inline">\{ Q_i \mid i \in [n] \}</span> is a collection of decision-trees over <span class="math inline">(\ZO^w)^s</span>, of depth <span class="math inline">\le t_q</span>. - The decision-trees <span class="math inline">Q_i</span> perform queries: forall <span class="math inline">v \in V(G)</span>, <span class="math inline">i \in [n]</span>, <span class="math inline">Q_i(E(v)) = q_i(v)</span>. - <span class="math inline">\{U_i \mid i \in [m]\}</span> is a collection of read/write decision-trees over <span class="math inline">(\ZO^w)^s</span> (i.e., over <span class="math inline">s</span>-long words over a <span class="math inline">w</span>-bit alphabet), of depth <span class="math inline">\le t_u</span>. - The read-write decision-trees <span class="math inline">U_i</span> perform updates on the encodings: for all <span class="math inline">v \in V(G)</span>, <span class="math inline">i \in [m]</span>, <span class="math inline">U_i(E(v)) = E(u_i(v))</span>.</p>
+</blockquote>
+<p>^342e98</p>
+<blockquote class="blockquote">
+<p>[!def] Relaxed Scheme A , or , is a tuple <span class="math inline">A = (w,s,t_u, t_q, E,\{Q_i\})</span>, where: - <span class="math inline">w,s,t_u,t_q,E</span> and <span class="math inline">\{Q_i\}</span> are as items 1-5 above. - But the updates do not need to be efficiently implementable by read-write decision trees. Instead, we only require that, for every <span class="math inline">v \in V(G)</span>, the Hamming distance between <span class="math inline">E(v)</span> and <span class="math inline">E(u_i(v))</span> is at most <span class="math inline">t_u</span>. (This is always the case for a normal solution.)</p>
+</blockquote>
+<p>^ba649f</p>
+</section>
+<section id="locally-updatable-local-prgs-and-a-natural-proofs-barrier-for-dynamic-data-structures" class="level3">
+<h3 class="anchored" data-anchor-id="locally-updatable-local-prgs-and-a-natural-proofs-barrier-for-dynamic-data-structures">5.2 Locally-updatable local PRGs and a natural proofs barrier for dynamic data-structures</h3>
+</section>
+<section id="some-not-very-convincing-candidates" class="level3">
+<h3 class="anchored" data-anchor-id="some-not-very-convincing-candidates">5.3 Some not-very convincing candidates</h3>
+</section>
+<section id="low-distance-local-prgs-on-the-line" class="level3">
+<h3 class="anchored" data-anchor-id="low-distance-local-prgs-on-the-line">5.4 Low-distance local PRGs on the line</h3>
+</section>
+<section id="low-distance-local-prgs-on-the-cube" class="level3">
+<h3 class="anchored" data-anchor-id="low-distance-local-prgs-on-the-cube">5.5 Low-distance local PRGs on the cube</h3>
+</section>
+<section id="wanted-a-natural-proof-against-a-random-function" class="level3">
+<h3 class="anchored" data-anchor-id="wanted-a-natural-proof-against-a-random-function">5.6 Wanted: a natural proof against a random function</h3>
+</section>
+</section>
+<section id="claim-all-known-dynamic-data-structure-lower-bounds-can-be-proven-by-natural-proofs" class="level2">
+<h2 class="anchored" data-anchor-id="claim-all-known-dynamic-data-structure-lower-bounds-can-be-proven-by-natural-proofs">6. Claim: All known dynamic data-structure lower-bounds can be proven by natural proofs</h2>
+<section id="the-chronogram-method" class="level3">
+<h3 class="anchored" data-anchor-id="the-chronogram-method">The chronogram method</h3>
+<p>[[Chronogram technique]]</p>
+</section>
+<section id="patrascu-and-demaines-information-transfer-technique" class="level3">
+<h3 class="anchored" data-anchor-id="patrascu-and-demaines-information-transfer-technique">Patrascu and Demaine’s information transfer technique</h3>
+</section>
+<section id="brody-and-larsens-lower-bounds-against-non-adaptive-data-structures" class="level3">
+<h3 class="anchored" data-anchor-id="brody-and-larsens-lower-bounds-against-non-adaptive-data-structures">Brody and Larsen’s Lower-bounds against non-adaptive data-structures</h3>
+</section>
+<section id="lower-bounds-against-polynomial-evaluation-cell-sampling-plus-chronogram" class="level3">
+<h3 class="anchored" data-anchor-id="lower-bounds-against-polynomial-evaluation-cell-sampling-plus-chronogram">Lower-bounds against polynomial evaluation (cell sampling plus chronogram)</h3>
+</section>
+<section id="larsen-and-yus-n32lower-bound-against-dynamic-reachability" class="level3">
+<h3 class="anchored" data-anchor-id="larsen-and-yus-n32lower-bound-against-dynamic-reachability">Larsen and Yu’s $(n)^{3/2}lower-bound against dynamic reachability</h3>
+</section>
+</section>
+<section id="online-problems-like-omv" class="level2">
+<h2 class="anchored" data-anchor-id="online-problems-like-omv">Online problems like OMv?</h2>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Tulasimohan Molli ∙ Made with <a href="https://quarto.org">Quarto</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://mathstodon.xyz/@neeldhara">
+      <i class="bi bi-mastodon" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/">
+      <i class="bi bi-bluesky" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,3 +1,6 @@
+---
+page-layout: article
+---
 # Courses
 
 :::{.callout-important icon="false" appearance="minimal"}

@@ -1,0 +1,19 @@
+---
+title: "Criticality of DeMorgan formulae"
+author: "Tulasimohan Molli"
+date: "2023-10-05"
+categories: [Boolean formulae, Criticality]
+tags: [complexity]
+---
+
+## Canonical Decision Tree
+
+## Unpacking 
+
+## Calculation
+
+
+---
+
+*Author: Your Name*  
+*Date: 2023-10-05*

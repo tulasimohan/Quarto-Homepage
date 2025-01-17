@@ -1,5 +1,8 @@
 ---
-title: "Tuulasimohan Molli"
+title: "Tulasimohan Molli"
+toc: false
+sidebar: false
+subtitle: Postdoc,  ULisboa
 about:
   id: hero-heading
   template: trestles
@@ -8,38 +11,45 @@ about:
   image-shape: rounded
   image-title: Tulasimohan Molli
   links:
-    # - icon: twitter
-    #   text: twitter
-    #   href: https://twitter.com
-    - icon: github
-      text: Github
-      href: https://github.com
-    - icon: Google Scholar
-      text: G Scholar
-      href: https://twitter.com
-    - icon: DBLP
-      text: DBLP
-      href: https://dblp.org/
-css: css/about.css
+    - text: "Phone"
+      icon: phone
+      href: "tel:+351920457" 
+    - text: "email"
+      icon: envelope
+      href: "mailto:tulasimohanm@gmail.com"
+description: 
+  "**Contact**: 📍 C 6.2.36 <br> Universidad de Lisboa <br>
+  Campo Grande <br>
+  Lisbon, Portugal"
+# css: css/about.css
 ---
-
 :::{#hero-heading}
 
-I am currently a Postdoctoral Researcher in the Department of Mathematics at the University of Lisbon.  
-I am working with [Bruno Loff]() on the Hardness of Finding Good Algorithms (project [HoFGA]()). I am a member of the research unit [LASIGE]() at the [Faculty of Sciences]() of the [University of Lisbon]().   
+I am a Postdoctoral Researcher in the Department of Mathematics at the University of Lisbon ([ULisboa]()), working under the supervision of [Bruno Loff]() on the Hardness of Finding Good Algorithms ([HoFGA]()) project. I am also a member of [LASIGE](), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL]()).
 
-I completed my PhD under the guidance of [Prahladh Harhsa]() at TIFR, Mumbai. 
+I obtained my PhD from Tata Institute of Fundamental Research ([TIFR]()), Mumbai, under the guidance of [Prahladh Harsha]().
 
-    
+<!-- I earned my Bachelor's and Master's degrees from Chennai Mathematical Institute (CMI), during which I also attended courses at the Institute of Mathematical Sciences (IMSc), Chennai. For my Master's project, I collaborated with Srikanth Srinivasan at IIT Bombay and completed a qualifier project under the guidance of Arkadev Chattopadhyay at TIFR. -->
 
 ## Research Interests
-Broadly interested in Complexity theory, in particular Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures lower bounds. 
 
+::: {.columns}
+::: {.column width="50%"}
+
+- Circuit Complexity
+- Communication and Query Complexity
+:::
+
+::: {.column width="50%"}
+- Analysis of Boolean functions
+- Data Structures
+:::
+:::
 
 ## Education
 
 PhD in Computer Science | 2023 </br>
-Tata Institute of Fundmental Research, Mumbai. 
+Tata Institute of Fundamental Research, Mumbai. 
 
 MSc in Computer Science | 2014 </br>
 Chennai Mathematical Institute, Chennai. 
@@ -47,4 +57,21 @@ Chennai Mathematical Institute, Chennai.
 BSc(Hons.) in Mathematics and Computer Science | 2012 </br>
 Chennai Mathematical Institute, Chennai.  
 
+:::
+
+<!-- # List of Publications  -->
+
+# List of Publications 
+
+:::{.columns}
+:::{.column width=49%}
+{{< include publications/papers.qmd >}}
+:::
+
+::::::{.column width=2%}
+:::
+
+:::{.column width=49%}
+{{< include publications/theses.qmd >}}
+:::
 :::
