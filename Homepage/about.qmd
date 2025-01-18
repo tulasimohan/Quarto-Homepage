@@ -14,14 +14,15 @@ about:
     - text: "Phone"
       icon: phone
       href: "tel:+351920457" 
-    - text: "email"
+    - text: "e-mail"
       icon: envelope
       href: "mailto:tulasimohanm@gmail.com"
 description: 
   "**Contact**: 📍 C 6.2.36 <br> Universidad de Lisboa <br>
   Campo Grande <br>
   Lisbon, Portugal"
-# css: css/about.css
+css: css/about.css
+
 ---
 :::{#hero-heading}
 
@@ -57,21 +58,4 @@ Chennai Mathematical Institute, Chennai.
 BSc(Hons.) in Mathematics and Computer Science | 2012 </br>
 Chennai Mathematical Institute, Chennai.  
 
-:::
-
-<!-- # List of Publications  -->
-
-# List of Publications 
-
-:::{.columns}
-:::{.column width=49%}
-{{< include publications/papers.qmd >}}
-:::
-
-::::::{.column width=2%}
-:::
-
-:::{.column width=49%}
-{{< include publications/theses.qmd >}}
-:::
 :::
