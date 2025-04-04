@@ -1,4 +1,4 @@
-## Theses and Reports 
+# Theses and Reports 
 
 :::{.callout-note icon=false appearance="minimal"}
 # **PhD Thesis: On Complexity Measures of Boolean Functions**

@@ -2,31 +2,33 @@
 title: "Tulasimohan Molli"
 toc: false
 sidebar: false
-subtitle: Postdoc,  ULisboa
+subtitle: Postdoc, FCUL.
 about:
   id: hero-heading
   template: trestles
   image: images/profile_pic.jpeg
-  image-width: 14em
+  image-width: 12em
   image-shape: rounded
-  image-title: Tulasimohan Molli
+  # image-title: Tulasimohan Molli
   links:
-    - text: "Phone"
+    - text: "**Phone**"
       icon: phone
       href: "tel:+351920457" 
-    - text: "e-mail"
+    - text: "**e-mail**"
       icon: envelope
       href: "mailto:tulasimohanm@gmail.com"
 description: 
-  "**Contact**: 📍 C 6.2.36 <br> Universidad de Lisboa <br>
-  Campo Grande <br>
-  Lisbon, Portugal"
+  "<div style='border: 1px solid #ccc; padding: 10px;'>
+  📍**Contact**: *C 6.2.36* <br> 
+  *Universidad de Lisboa* <br>
+  *Campo Grande* <br>
+  *Lisbon, Portugal*
+  </div>"
 css: css/about.css
-
 ---
 :::{#hero-heading}
 
-I am a Postdoctoral Researcher in the Department of Mathematics at the University of Lisbon ([ULisboa]()), working under the supervision of [Bruno Loff]() on the Hardness of Finding Good Algorithms ([HoFGA]()) project. I am also a member of [LASIGE](), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL]()).
+I am a Postdoctoral Researcher in the Department of Mathematics at  [ULisboa](), working under the supervision of [Bruno Loff]() on the Hardness of Finding Good Algorithms ([HoFGA]()) project. I am also a member of [LASIGE](), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL]()).
 
 I obtained my PhD from Tata Institute of Fundamental Research ([TIFR]()), Mumbai, under the guidance of [Prahladh Harsha]().
 
@@ -34,7 +36,9 @@ I obtained my PhD from Tata Institute of Fundamental Research ([TIFR]()), Mumbai
 
 ## Research Interests
 
-::: {.columns}
+Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures. 
+
+<!-- ::: {.columns}
 ::: {.column width="50%"}
 
 - Circuit Complexity
@@ -45,7 +49,7 @@ I obtained my PhD from Tata Institute of Fundamental Research ([TIFR]()), Mumbai
 - Analysis of Boolean functions
 - Data Structures
 :::
-:::
+::: -->
 
 ## Education
 

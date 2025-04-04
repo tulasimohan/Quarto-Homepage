@@ -16,20 +16,20 @@ website:
         menu:
           - text: Publications 
             href: publications/publications.qmd
-          - text: Informal
-            href: notes.qmd 
+          # - text: Informal
+          #   href: notes.qmd 
           - text: Teaching
             href: teaching.qmd
-      - text: Misc.
-        menu: 
-          - href: portugal.qmd
-            text: Portugal
+      # - text: Misc.
+      #   menu: 
+      #     - href: portugal.qmd
+      #       text: How to Portugal
   # sidebar:
   #   - text: "Data Structure LBs"
   #     contents: docs
   page-footer: 
     left: >-
-      &#169; 2025 Tulasimohan Molli &#8729; Made with [Quarto](https://quarto.org). 
+      &#169; 2025 Tulasimohan Molli &#8729; Made with [Quarto](https://quarto.org)| h/t [Neeldhara's webpage](). 
     right: 
       - icon: github
         href: https://github.com/

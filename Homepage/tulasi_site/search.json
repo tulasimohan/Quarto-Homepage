@@ -39,14 +39,14 @@
     "href": "about.html",
     "title": "Tulasimohan Molli",
     "section": "",
-    "text": "Phone\n  \n  \n    \n     e-mail\n  \n\n  \n  \nI am a Postdoctoral Researcher in the Department of Mathematics at the University of Lisbon (ULisboa), working under the supervision of Bruno Loff on the Hardness of Finding Good Algorithms (HoFGA) project. I am also a member of LASIGE, a research unit at the Faculty of Sciences, University of Lisbon (FCUL).\nI obtained my PhD from Tata Institute of Fundamental Research (TIFR), Mumbai, under the guidance of Prahladh Harsha.\n\n\n\n\n\n\nCircuit Complexity\nCommunication and Query Complexity\n\n\n\nAnalysis of Boolean functions\nData Structures\n\n\n\n\n\n\nPhD in Computer Science | 2023  Tata Institute of Fundamental Research, Mumbai.\nMSc in Computer Science | 2014  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science | 2012  Chennai Mathematical Institute, Chennai."
+    "text": "Phone\n  \n  \n    \n     e-mail\n  \n\n  \n  \nI am a Postdoctoral Researcher in the Department of Mathematics at ULisboa, working under the supervision of Bruno Loff on the Hardness of Finding Good Algorithms (HoFGA) project. I am also a member of LASIGE, a research unit at the Faculty of Sciences, University of Lisbon (FCUL).\nI obtained my PhD from Tata Institute of Fundamental Research (TIFR), Mumbai, under the guidance of Prahladh Harsha.\n\n\n\nCircuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures.\n\n\n\n\nPhD in Computer Science | 2023  Tata Institute of Fundamental Research, Mumbai.\nMSc in Computer Science | 2014  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science | 2012  Chennai Mathematical Institute, Chennai."
   },
   {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
     "title": "Tulasimohan Molli",
     "section": "",
-    "text": "Circuit Complexity\nCommunication and Query Complexity\n\n\n\nAnalysis of Boolean functions\nData Structures"
+    "text": "Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures."
   },
   {
     "objectID": "about.html#education",
@@ -177,9 +177,9 @@
   {
     "objectID": "publications/publications.html",
     "href": "publications/publications.html",
-    "title": "Tulasimohan Molli",
+    "title": "Papers",
     "section": "",
-    "text": "Criticality of AC^0 formulae.\n\n\n\nPrahladh Harsha, Tulasimohan Molli, Ashutosh Shankar   CCC 2023 | arXiv | bibtex\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nSourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal.  FSTTCS 2021 | arXiv | bibtex\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nSiddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan.  FSTTCS 2019 | eccc | RSA Journal | bibtex"
+    "text": "Papers\n\n\n\n\n\n\nCriticality of AC^0 formulae.\n\n\n\nPrahladh Harsha, Tulasimohan Molli, Ashutosh Shankar  CCC 2023 | arXiv\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nSourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal.  FSTTCS 2021 | arXiv\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nSiddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan.  FSTTCS 2019 | RSA Journal | arXiv | eccc\n\n\n\n\nTheses and Reports\n\n\n\n\n\n\nPhD Thesis: On Complexity Measures of Boolean Functions\n\n\n\nunder the guidance of Prof. Prahladh Harsha  at Tata Institute of Fundamental Research, Mumbai.\n\n\n\n\n\n\n\n\nMaster Project: Structural results and applications to Arithmetic Circuit Complexity\n\n\n\nunder the guidance of Prof. Srikanth Srinivasan,  as a part of my Master’s Thesis at Chennai Mathematical Institute.\n\n\n\n\n\n\n\n\nQualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates\n\n\n\nunder the guidance of Prof. Arkadev Chattopadhyay,  at Tata Institute of Fundamental Research."
   },
   {
     "objectID": "publications/publications.html#papers",
@@ -198,9 +198,9 @@
   {
     "objectID": "publications/theses.html",
     "href": "publications/theses.html",
-    "title": "Tulasimohan Molli",
+    "title": "Theses and Reports",
     "section": "",
-    "text": "PhD Thesis: On Complexity Measures of Boolean Functions\n\n\n\nunder the guidance of Prof. Prahladh Harsha  at Tata Institute of Fundamental Research, Mumbai.\n\n\n\n\n\n\n\n\nMaster Project: Structural results and applications to Arithmetic Circuit Complexity\n\n\n\nunder the guidance of Prof. Srikanth Srinivasan,  as a part of my Master’s Thesis at Chennai Mathematical Institute.\n\n\n\n\n\n\n\n\nQualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates\n\n\n\nunder the guidance of Prof. Arkadev Chattopadhyay,  at Tata Institute of Fundamental Research."
+    "text": "Theses and Reports\n\n\n\n\n\n\nPhD Thesis: On Complexity Measures of Boolean Functions\n\n\n\nunder the guidance of Prof. Prahladh Harsha  at Tata Institute of Fundamental Research, Mumbai.\n\n\n\n\n\n\n\n\nMaster Project: Structural results and applications to Arithmetic Circuit Complexity\n\n\n\nunder the guidance of Prof. Srikanth Srinivasan,  as a part of my Master’s Thesis at Chennai Mathematical Institute.\n\n\n\n\n\n\n\n\nQualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates\n\n\n\nunder the guidance of Prof. Arkadev Chattopadhyay,  at Tata Institute of Fundamental Research."
   },
   {
     "objectID": "publications/theses.html#theses-and-reports",
@@ -212,9 +212,9 @@
   {
     "objectID": "publications/papers.html",
     "href": "publications/papers.html",
-    "title": "Tulasimohan Molli",
+    "title": "Papers",
     "section": "",
-    "text": "Criticality of AC^0 formulae.\n\n\n\nPrahladh Harsha, Tulasimohan Molli, Ashutosh Shankar   CCC 2023 | arXiv | bibtex\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nSourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal.  FSTTCS 2021 | arXiv | bibtex\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nSiddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan.  FSTTCS 2019 | eccc | RSA Journal | bibtex"
+    "text": "Papers\n\n\n\n\n\n\nCriticality of AC^0 formulae.\n\n\n\nPrahladh Harsha, Tulasimohan Molli, Ashutosh Shankar  CCC 2023 | arXiv\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nSourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal.  FSTTCS 2021 | arXiv\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nSiddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan.  FSTTCS 2019 | RSA Journal | arXiv | eccc"
   },
   {
     "objectID": "publications/papers.html#papers",
