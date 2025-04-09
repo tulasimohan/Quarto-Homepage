@@ -28,17 +28,19 @@ website:
   #   - text: "Data Structure LBs"
   #     contents: docs
   page-footer: 
-    left: >-
-      &#169; 2025 Tulasimohan Molli &#8729; Made with [Quarto](https://quarto.org)| h/t [Neeldhara's webpage](). 
+    left: >- 
+      &#169; 2025 Tulasimohan Molli 
+    center: >- 
+      Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/). 
     right: 
       - icon: github
-        href: https://github.com/
+        href: https://github.com/tulasimohan
       - icon: linkedin
-        href: https://www.linkedin.com
+        href: https://www.linkedin.com/in/tulasimohan-molli-b206b2164
       - icon: mastodon
-        href: https://mathstodon.xyz/@neeldhara
+        href: https://mathstodon.xyz/@tulasimohan
       - icon: bluesky
-        href: https://bsky.app/
+        href: https://bsky.app/profile/tulasimohan.bsky.social
 
 format:
   html:
