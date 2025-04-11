@@ -28,9 +28,9 @@ css: css/about.css
 ---
 :::{#hero-heading}
 
-I am a Postdoctoral Researcher in the Department of Mathematics at  [ULisboa](), working under the supervision of [Bruno Loff]() on the Hardness of Finding Good Algorithms ([HoFGA]()) project. I am also a member of [LASIGE](), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL]()).
+I am a Postdoctoral Researcher in the Department of Mathematics at  [ULisboa](https://www.ulisboa.pt/), working under the supervision of [Bruno Loff](https://brunoloff.wordpress.com/) on the Hardness of Finding Good Algorithms ([HoFGA](https://brunoloff.wordpress.com/hofga/)) project. I am also a member of [LASIGE](https://lasige.pt/), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL](https://ciencias.ulisboa.pt/)).
 
-I obtained my PhD from Tata Institute of Fundamental Research ([TIFR]()), Mumbai, under the guidance of [Prahladh Harsha]().
+I obtained my PhD from Tata Institute of Fundamental Research ([TIFR](https://www.tifr.res.in/)), Mumbai, under the guidance of [Prahladh Harsha](https://www.tcs.tifr.res.in/~prahladh/).
 
 <!-- I earned my Bachelor's and Master's degrees from Chennai Mathematical Institute (CMI), during which I also attended courses at the Institute of Mathematical Sciences (IMSc), Chennai. For my Master's project, I collaborated with Srikanth Srinivasan at IIT Bombay and completed a qualifier project under the guidance of Arkadev Chattopadhyay at TIFR. -->
 
