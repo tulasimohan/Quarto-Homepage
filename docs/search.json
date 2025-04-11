@@ -21,25 +21,18 @@
     "text": "Theses and Reports\n\n\n\n\n\n\nPhD Thesis: On Complexity Measures of Boolean Functions\n\n\n\nunder the guidance of Prof. Prahladh Harsha  at Tata Institute of Fundamental Research, Mumbai.\n\n\n\n\n\n\n\n\nMaster Project: Structural results and applications to Arithmetic Circuit Complexity\n\n\n\nunder the guidance of Prof. Srikanth Srinivasan,  as a part of my Master’s Thesis at Chennai Mathematical Institute.\n\n\n\n\n\n\n\n\nQualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates\n\n\n\nunder the guidance of Prof. Arkadev Chattopadhyay,  at Tata Institute of Fundamental Research."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Tulasimohan Molli",
-    "section": "",
-    "text": "Phone\n  \n  \n    \n     e-mail\n  \n\n  \n  \nI am a Postdoctoral Researcher in the Department of Mathematics at ULisboa, working under the supervision of Bruno Loff on the Hardness of Finding Good Algorithms (HoFGA) project. I am also a member of LASIGE, a research unit at the Faculty of Sciences, University of Lisbon (FCUL).\nI obtained my PhD from Tata Institute of Fundamental Research (TIFR), Mumbai, under the guidance of Prahladh Harsha.\n\n\n\nCircuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures.\n\n\n\n\nPhD in Computer Science | 2023  Tata Institute of Fundamental Research, Mumbai.\nMSc in Computer Science | 2014  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science | 2012  Chennai Mathematical Institute, Chennai."
-  },
-  {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
     "title": "Tulasimohan Molli",
-    "section": "",
-    "text": "Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures."
+    "section": "Research Interests",
+    "text": "Research Interests\nCircuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "Tulasimohan Molli",
-    "section": "",
-    "text": "PhD in Computer Science | 2023  Tata Institute of Fundamental Research, Mumbai.\nMSc in Computer Science | 2014  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science | 2012  Chennai Mathematical Institute, Chennai."
+    "section": "Education",
+    "text": "Education\nPhD in Computer Science | 2023  Tata Institute of Fundamental Research, Mumbai.\nMSc in Computer Science | 2014  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science | 2012  Chennai Mathematical Institute, Chennai."
   },
   {
     "objectID": "portugal.html",
@@ -79,7 +72,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome !",
+    "title": "Welcome to Tulasimohan Molli’s Homepage",
     "section": "",
     "text": "Welcome !"
   }

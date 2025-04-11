@@ -1,0 +1,19 @@
+---
+title: "Welcome to Tulasimohan Molli's Homepage"
+description: "Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources."
+sidebar: false
+toc: false
+css: css/home.css
+# include-after-body: footer.html
+# page-layout: article
+# filters:
+#   - imagify  # Optional filter for image processing
+---
+<meta name="robots" content="index, follow">
+<meta name="author" content="Tulasimohan Molli">
+<meta name="keywords" content="Tulasimohan Molli, Research, Publications, Teaching, Personal Website">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+# Welcome !
+
+
