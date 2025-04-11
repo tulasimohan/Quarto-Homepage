@@ -10,8 +10,8 @@ website:
     background: white
     pinned: true
     right:
-      - href: about.qmd
-        text: Home
+      - href: index.qmd
+        text: About
       - text: Research
         menu:
           - text: Publications 
