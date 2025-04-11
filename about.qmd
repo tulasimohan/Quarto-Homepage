@@ -26,6 +26,21 @@ description:
   </div>"
 css: css/about.css
 ---
+
+<meta name="description" content="Welcome to the official homepage of Tulasimohan Molli. Explore research, publications, teaching resources, and more.">
+<meta name="keywords" content="Tulasimohan Molli, Research, Publications, Teaching, Personal Website, Academic, Homepage">
+<meta name="author" content="Tulasimohan Molli">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Tulasimohan Molli - Official Homepage">
+<meta property="og:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tulasimohan.github.io/Quarto-Homepage">
+<meta property="og:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
+<meta name="twitter:card" conh rendering or assist h rendering or assist further!!tent="summary_large_image">
+<meta name="twitter:title" content="Tulasimohan Molli - Official Homepage">
+<meta name="twitter:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
+<meta name="twitter:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
+
 :::{#hero-heading}
 
 I am a Postdoctoral Researcher in the Department of Mathematics at  [ULisboa](https://www.ulisboa.pt/), working under the supervision of [Bruno Loff](https://brunoloff.wordpress.com/) on the Hardness of Finding Good Algorithms ([HoFGA](https://brunoloff.wordpress.com/hofga/)) project. I am also a member of [LASIGE](https://lasige.pt/), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL](https://ciencias.ulisboa.pt/)).

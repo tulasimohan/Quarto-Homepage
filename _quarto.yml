@@ -1,9 +1,9 @@
+site-url: "https://tulasimohan.github.io/Quarto-Homepage"
+output-dir: docs
+
 project:
-  output-dir: docs
   type: website
-  preview:
-    port: 7777
-  
+
 website:
   title: "Tulasimohan Molli"
   navbar:
@@ -11,27 +11,16 @@ website:
     pinned: true
     right:
       - href: about.qmd
-        text: About
+        text: Home
       - text: Research
         menu:
           - text: Publications 
             href: publications/publications.qmd
-          # - text: Informal
-          #   href: notes.qmd 
           - text: Teaching
             href: teaching.qmd
-      # - text: Misc.
-      #   menu: 
-      #     - href: portugal.qmd
-      #       text: How to Portugal
-  # sidebar:
-  #   - text: "Data Structure LBs"
-  #     contents: docs
   page-footer: 
-    left: >- 
-      &#169; 2025 Tulasimohan Molli 
-    center: >- 
-      Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/). 
+    left: "&#169; 2025 Tulasimohan Molli"
+    center: "Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/)."
     right: 
       - icon: github
         href: https://github.com/tulasimohan
@@ -46,11 +35,9 @@ format:
   html:
     theme: 
       light: [cosmo, custom.scss] 
-    # js: scripts.js
     css: css/styles.css
     toc: true
     html-math-method: katex
     smooth-scroll: true
     anchor-sections: true
-    # include-after-body: footer.html
     page-layout: full
