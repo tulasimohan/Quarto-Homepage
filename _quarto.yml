@@ -1,11 +1,11 @@
-site-url: "https://tulasimohan.github.io"
-output-dir: docs
-
 project:
   type: website
 
+output-dir: docs
+
 website:
   title: "Tulasimohan Molli"
+  site-url: "https://tulasimohan.github.io"
   navbar:
     background: white
     pinned: true
@@ -41,3 +41,5 @@ format:
     smooth-scroll: true
     anchor-sections: true
     page-layout: full
+    includes:
+      in-header: googlef48d8f5728f4a046.html
