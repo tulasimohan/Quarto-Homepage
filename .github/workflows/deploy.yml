@@ -25,11 +25,11 @@ jobs:
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ vars.FTP_SERVER }}
-          username: ${{ vars.FTP_USERNAME }}
+          server: ftp://webserver07.fc.ul.pt
+          username: tmolli@ciencias.ulisboa.pt
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: docs/
           protocol: ftp
           port: 21
-          server-dir: /
+          server-dir: /public_html/
           dangerous-clean-slate: true
