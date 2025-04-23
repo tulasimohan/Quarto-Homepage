@@ -19,7 +19,7 @@ website:
           - text: Teaching
             href: teaching.qmd
   page-footer: 
-    left: "&#169; 2025 Tulasimohan Molli"
+    # left: "&#169; 2025 Tulasimohan Molli"
     center: "Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/)."
     right: 
       - icon: github
