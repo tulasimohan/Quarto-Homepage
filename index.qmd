@@ -74,7 +74,7 @@ Chennai Mathematical Institute, Chennai.
 <meta property="og:title" content="Tulasimohan Molli - Official Homepage">
 <meta property="og:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://tulasimohan.github.io/Quarto-Homepage">
+<meta property="og:url" content="https://tulasimohan.github.iQuarto-Homepage">
 <meta property="og:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tulasimohan Molli - Official Homepage">
