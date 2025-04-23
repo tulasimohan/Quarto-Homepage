@@ -3,7 +3,7 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -30,5 +30,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: docs/
           protocol: ftp
-          port: 21  # Standard FTP port
+          port: 21
           server-dir: /
+          dangerous-clean-slate: true
