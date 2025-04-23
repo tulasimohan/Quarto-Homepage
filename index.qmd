@@ -8,7 +8,7 @@ about:
   id: hero-heading
   template: trestles
   image: images/profile_pic.jpeg
-  image-width: 12em
+  image-width: 12em 
   image-shape: rounded
   # image-title: Tulasimohan Molli
   links:
