@@ -3,7 +3,7 @@ title: Notes
 sidebar: true
 toc: true
 listing:
-  contents: "docs"  
+  contents: "publications"  # Updated to point to the correct folder
   sort: "date desc"
   type: default
   categories: true
@@ -14,4 +14,5 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+# Ensure the listing points to the correct folder or file. If this is incorrect, update it to the appropriate path.
 

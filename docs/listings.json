@@ -1,6 +1,11 @@
 [
   {
     "listing": "/notes.html",
-    "items": []
+    "items": [
+      "/publications/theses.html",
+      "/publications/papers.html",
+      "/publications/publications.html",
+      "/publications/notes/criticality.html"
+    ]
   }
 ]

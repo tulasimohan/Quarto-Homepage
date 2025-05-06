@@ -1,23 +1,24 @@
 project:
   type: website
-
-output-dir: docs
+  output-dir: docs
 
 website:
   title: "Tulasimohan Molli"
   site-url: "https://tulasimohan.github.io"
+  favicon: images/TM_logo.png
+  description: "Tulasimohan Molli's personal website"
   navbar:
     background: white
     pinned: true
     right:
       - href: index.qmd
         text: About
-      - text: Research
-        menu:
-          - text: Publications 
-            href: publications/publications.qmd
-          - text: Teaching
-            href: teaching.qmd
+      # - text: Research
+      #   menu:
+      - text: Publications 
+        href: publications/publications.qmd
+      - text: Teaching
+        href: teaching.qmd
   page-footer: 
     center: "Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/)."
     right: 

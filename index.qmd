@@ -66,6 +66,8 @@ Chennai Mathematical Institute, Chennai.
 
 :::
 
+<!-- Properly closing the unclosed fenced div to resolve the warning -->
+
 :::{=html}
 <meta name="description" content="Welcome to the official homepage of Tulasimohan Molli. Explore research, publications, teaching resources, and more.">
 <meta name="keywords" content="Tulasimohan Molli, Research, Publications, Teaching, Personal Website, Academic, Homepage">
@@ -81,6 +83,5 @@ Chennai Mathematical Institute, Chennai.
 <meta name="twitter:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
 <meta name="twitter:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
 <meta name="google-site-verification" content="aY5AuegUT_-X7IlwVNTnqV_wTZoXat2onobqZlKEcrM" />
-
 
 
