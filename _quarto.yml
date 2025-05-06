@@ -19,6 +19,8 @@ website:
         href: publications/publications.qmd
       - text: Teaching
         href: teaching.qmd
+      - text: CV
+        href: Tulasi_s_Resume.pdf
   page-footer: 
     center: "Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/)."
     right: 
