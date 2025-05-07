@@ -53,6 +53,7 @@ format:
       in-header: googlef48d8f5728f4a046.html
       after-body: googlef48d8f5728f4a046.html
 
-# Ensure the Google Search Console verification file is included in the output
+# Ensure the Google Search Console verification file and sitemap are included in the output
 resources:
   - googlef48d8f5728f4a046.html
+  - sitemap.xml
