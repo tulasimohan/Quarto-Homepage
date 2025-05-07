@@ -14,5 +14,5 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
-# Ensure the listing points to the correct folder or file. If this is incorrect, update it to the appropriate path.
 
+# Ensure the listing points to the correct folder or file. If this is incorrect, update it to the appropriate path.

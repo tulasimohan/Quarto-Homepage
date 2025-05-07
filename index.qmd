@@ -10,27 +10,24 @@ about:
   image: images/profile_pic.jpeg
   image-width: 12em 
   image-shape: rounded
-  # image-title: Tulasimohan Molli
+  image-title: Tulasimohan Molli
   links:
-    - text: "**Phone**"
-      icon: phone
+    - text: "<img src='images/phone.jpg' width='16' alt='Phone'>"
       href: "tel:+351920457" 
-    - text: "**e-mail**"
-      icon: envelope
+    - text: "<img src='images/email.png' width='18' alt='Email'>"
       href: "mailto:tulasimohanm@gmail.com"
 description: 
-  "<div style='border: 1px solid #ccc; padding: 10px;'>
-  📍**Contact**: *C 6.2.36* <br> 
+  "<div style='padding: 10px;'>
+  <img src='images/location.png' alt='Address' style='width: 16px; vertical-align: middle;'> *C 6.2.36* <br> 
   *Universidad de Lisboa* <br>
   *Campo Grande* <br>
-  *Lisbon, Portugal*
+  *Lisbon, Portugal.*
   </div>"
 css: css/about.css
 ---
 
-:::{#hero-heading}
-
-I am a Postdoctoral Researcher in the Department of Mathematics at  [ULisboa](https://www.ulisboa.pt/), working under the supervision of [Bruno Loff](https://brunoloff.wordpress.com/) on the Hardness of Finding Good Algorithms ([HoFGA](https://brunoloff.wordpress.com/hofga/)) project. I am also a member of [LASIGE](https://lasige.pt/), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL](https://ciencias.ulisboa.pt/)).
+::: {#hero-heading}
+I am a Postdoctoral Researcher in the Department of Mathematics at [ULisboa](https://www.ulisboa.pt/), working under the supervision of [Bruno Loff](https://brunoloff.wordpress.com/) on the Hardness of Finding Good Algorithms ([HoFGA](https://brunoloff.wordpress.com/hofga/)) project. I am also a member of [LASIGE](https://lasige.pt/), a research unit at the Faculty of Sciences, University of Lisbon ([FCUL](https://ciencias.ulisboa.pt/)).
 
 I obtained my PhD from Tata Institute of Fundamental Research ([TIFR](https://www.tifr.res.in/)), Mumbai, under the guidance of [Prahladh Harsha](https://www.tcs.tifr.res.in/~prahladh/).
 
@@ -38,50 +35,45 @@ I obtained my PhD from Tata Institute of Fundamental Research ([TIFR](https://ww
 
 ## Research Interests
 
-Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures. 
-
-<!-- ::: {.columns}
-::: {.column width="50%"}
-
-- Circuit Complexity
-- Communication and Query Complexity
-:::
-
-::: {.column width="50%"}
-- Analysis of Boolean functions
-- Data Structures
-:::
-::: -->
+Circuit Complexity, Communication and Query Complexity, Analysis of Boolean functions, Data Structures.
 
 ## Education
 
-PhD in Computer Science | 2023 </br>
-Tata Institute of Fundamental Research, Mumbai. 
+PhD in Computer Science \| 2023 </br> Tata Institute of Fundamental Research, Mumbai.
 
-MSc in Computer Science | 2014 </br>
-Chennai Mathematical Institute, Chennai. 
+MSc in Computer Science \| 2014 </br> Chennai Mathematical Institute, Chennai.
 
-BSc(Hons.) in Mathematics and Computer Science | 2012 </br>
-Chennai Mathematical Institute, Chennai.  
-
+BSc(Hons.) in Mathematics and Computer Science \| 2012 </br> Chennai Mathematical Institute, Chennai.
 :::
 
 <!-- Properly closing the unclosed fenced div to resolve the warning -->
 
-:::{=html}
+::: {=html}
 <meta name="description" content="Welcome to the official homepage of Tulasimohan Molli. Explore research, publications, teaching resources, and more.">
-<meta name="keywords" content="Tulasimohan Molli, Research, Publications, Teaching, Personal Website, Academic, Homepage">
-<meta name="author" content="Tulasimohan Molli">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Tulasimohan Molli - Official Homepage">
-<meta property="og:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tulasimohan.github.iQuarto-Homepage">
-<meta property="og:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tulasimohan Molli - Official Homepage">
-<meta name="twitter:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
-<meta name="twitter:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
-<meta name="google-site-verification" content="aY5AuegUT_-X7IlwVNTnqV_wTZoXat2onobqZlKEcrM" />
 
+<meta name="keywords" content="Tulasimohan Molli, Research, Publications, Teaching, Personal Website, Academic, Homepage">
+
+<meta name="author" content="Tulasimohan Molli">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Tulasimohan Molli - Official Homepage">
+
+<meta property="og:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://tulasimohan.github.iQuarto-Homepage">
+
+<meta property="og:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Tulasimohan Molli - Official Homepage">
+
+<meta name="twitter:description" content="Explore the personal website of Tulasimohan Molli, featuring research, publications, and teaching resources.">
+
+<meta name="twitter:image" content="https://tulasimohan.github.io/Quarto-Homepage/images/profile_pic.jpeg">
+
+<meta name="google-site-verification" content="aY5AuegUT_-X7IlwVNTnqV_wTZoXat2onobqZlKEcrM" />
 
