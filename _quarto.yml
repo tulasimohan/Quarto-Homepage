@@ -51,3 +51,8 @@ format:
     page-layout: full
     includes:
       in-header: googlef48d8f5728f4a046.html
+      after-body: googlef48d8f5728f4a046.html
+
+# Ensure the Google Search Console verification file is included in the output
+resources:
+  - googlef48d8f5728f4a046.html
