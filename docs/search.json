@@ -28,6 +28,69 @@
     "text": "PhD in Computer Science | 2023  Tata Institute of Fundamental Research, Mumbai.\nMSc in Computer Science | 2014  Chennai Mathematical Institute, Chennai.\nBSc(Hons.) in Mathematics and Computer Science | 2012  Chennai Mathematical Institute, Chennai."
   },
   {
+    "objectID": "publications/notes/criticality.html",
+    "href": "publications/notes/criticality.html",
+    "title": "Criticality of Boolean functions",
+    "section": "",
+    "text": "Question: What is Criticality?  Answer: Defined by Rossman in (Rossman 2019) is a complexity measure for Boolean functions which captures the essence of Swithching Lemma.\nQuestion: So, What is a Switching lemma?  Answer: Switching lemma studies the effect of random restrictions on depth 2 formulae i.e. DNFs and CNFs.\nQuestion: So, what is a random restriction?"
+  },
+  {
+    "objectID": "publications/notes/criticality.html#random-restrictions",
+    "href": "publications/notes/criticality.html#random-restrictions",
+    "title": "Criticality of Boolean functions",
+    "section": "Random restrictions",
+    "text": "Random restrictions\nA p -random restriction is distribution on the partial inputs. Each variable is independetly revealed with probability p and hidden with probability 1-p. When revealed it is set to 0 or 1 randomly. Here is a formal defintion,\n\n\n\n\n\n\np random restriction\n\n\n\nLet X be the set of variables. A restriction \\rho is a map \\rho: X \\to \\{0,1,*\\}. A p-random restriction is sampled as follows: - For each i \\in n, x_i = \\begin{cases}\n&* \\text{\\ with prob\\ } p\\\\\n&0 \\text{\\ with prob\\ } (1-p)/2\\\\\n&1 \\text{\\ with prob\\ } (1-p)/2.\n\\end{cases}"
+  },
+  {
+    "objectID": "publications/notes/criticality.html#hastads-switching-lemma",
+    "href": "publications/notes/criticality.html#hastads-switching-lemma",
+    "title": "Criticality of Boolean functions",
+    "section": "Hastad’s switching lemma",
+    "text": "Hastad’s switching lemma\nHastad in his Godel prize work on switching lemmas has studied the effect of random restrictions on depth 2 formulas i.e. DNF and CNF with bounded with. He showed that depth 2 formulas of bounded width become small depth decision trees with whp.\n\nTo this date there are two proofs of this theorem available. One due to Hastad and the other due to Razabraov.\nRazbarov uses an encoding argument and the notion of a canonical decision tree.\n\nSince a decision tree of depthk can be converted into a DNF and CNF of width k, this can be used switch a DNF to CNF and vice-versa. Hence the name Switching lemma.\n\nApplications of HSL\nThis has found many applications in Circuit Complexity.\n\nAn application of the HSL proved in the original paper(Hastad 1986) of Hastad is the tight size lower bound on AC^0 circuits computing parity.\nFollowing the Switching lemma (Linial, Mansour, and Nisan 1993) showed Fourier tail bounds which implied learning algorithms for DNFs and CNFs.\nBazzi (Bazzi 2009)and Braverman(Braverman 2010) constructed PRGs for DNFs and AC^0 circuits respectively. They works showed that bounded independence fools AC^0 circuits."
+  },
+  {
+    "objectID": "publications/notes/criticality.html#ac0-formulae",
+    "href": "publications/notes/criticality.html#ac0-formulae",
+    "title": "Criticality of Boolean functions",
+    "section": "AC0 formulae",
+    "text": "AC0 formulae\n\nMeanwhile (Rossman 2018) showed tight lower bounds for AC^0 formulae using using a very clever application Hastad’s switching lemma.\n\nThis result implies the AC^0 circuit lower bound.\nA size S circuit of depth can be converted into a size S^d Formula of depth by starting from the bottom and carefully duplicating the nodes which are used more than once. Rossman Formula lower bound showed that this conversion is tight. 1"
+  },
+  {
+    "objectID": "publications/notes/criticality.html#average-case-lower-bounds",
+    "href": "publications/notes/criticality.html#average-case-lower-bounds",
+    "title": "Criticality of Boolean functions",
+    "section": "Average case lower bounds",
+    "text": "Average case lower bounds\n\nHastad came up with his multi switching lemma and showed a Average case lower bound for AC^0 circuits. In doing so, he drastically simplifies his original proof of the HSL.\n\nIn this proof, he comes with the notion of Downward closed set of restrictions and notes that certain events are downward closed and magically finishes the proof in a few lines.\nHe constructs common decision trees for a collection of Boolean functions."
+  },
+  {
+    "objectID": "publications/notes/criticality.html#one-theorem-to-prove-them-all",
+    "href": "publications/notes/criticality.html#one-theorem-to-prove-them-all",
+    "title": "Criticality of Boolean functions",
+    "section": "One theorem to prove them all",
+    "text": "One theorem to prove them all\nSo far, we have seen Circuits and Formulae.\n\nWorst and Average case size lower bounds for AC^0 Cirucits. Both due to Hastad.\nWorst case size lower bound for AC^0 formulae.\n\n\n\n\n\n\n\nQuestion:\n\n\n\nAverage case lower bounds for AC^0 formulae.\n\n\nWhy do we care?\n\nImplies all the other lower bounds that we mentioned till this point."
+  },
+  {
+    "objectID": "publications/notes/criticality.html#criticality",
+    "href": "publications/notes/criticality.html#criticality",
+    "title": "Criticality of Boolean functions",
+    "section": "Criticality",
+    "text": "Criticality\nEnters Rossman with his notion of Criticality inspired by the statement of HSL.\n\nShows that all existing bounds are just bounds on Criticality. - [ ] write this.\nBounds on Criticality imply all the applications, like\n\nWorst and Average case size lower bounds.\nFourier tail bounds.\nLearning Algorithms.\nSatisfiability algorithms.\nBounds on decision trees size.\n\nConjectures that the Criticality of AC^0 formulae of size S and depth d+1 is \\frac1d \\left(\\frac{\\log S}{d}\\right)^d.\nProved the conjecture for $d =1 i.e. CNFs and DNFs using some Entropic arguments.\nProved the conjecture for Regular $AC^0 formulae in (Rossman 2019).\nThe general formula case was resolved by (Harsha, Molli, and Shankar 2023)."
+  },
+  {
+    "objectID": "publications/notes/criticality.html#key-ideas",
+    "href": "publications/notes/criticality.html#key-ideas",
+    "title": "Criticality of Boolean functions",
+    "section": "Key ideas",
+    "text": "Key ideas\n\nCanonical Decsion tree\nRazborov’s encoding proof\nDownward closure\nCanonical Common Decision trees\nHastad’s downward closure proof\nCoupled sampling procedure for Sampling random restrictions\nTree Restrictions\nRossman’s Canonical Decision Tree for Formulae.\nRossman’s Entropic proof for DNFs and Regular formulae."
+  },
+  {
+    "objectID": "publications/notes/criticality.html#footnotes",
+    "href": "publications/notes/criticality.html#footnotes",
+    "title": "Criticality of Boolean functions",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWhy? Suppose this conversion is not tight, size $S circuit became o(S^d) formula, then this would imply a too good to be true cirucit lower bound for AC^0 circuits↩︎"
+  },
+  {
     "objectID": "publications/publications.html",
     "href": "publications/publications.html",
     "title": "Papers",
@@ -53,7 +116,7 @@
     "href": "notes.html",
     "title": "Notes",
     "section": "",
-    "text": "Ensure the listing points to the correct folder or file. If this is incorrect, update it to the appropriate path.\n\n\n\n\n\n\n\n\n\n\nTheses and Reports\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\nPapers\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 min\n\n\n\n\n\n\n\nCriticality of DeMorgan formulae\n\n\n\n\n\n\nBoolean formulae\n\n\nCriticality\n\n\n\n\n\n\nOct 5, 2023\n\n\nTulasimohan Molli\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nProbabilistic Polyomials\n\n\n\n\n\n\nPolynomials\n\n\nProbabilistic polynomials\n\n\nBoolean functions\n\n\n\n\n\n\nOct 5, 2023\n\n\nTulasimohan Molli\n\n\n1 min\n\n\n\n\n\n\n\nCriticality of Boolean functions\n\n\n\n\n\n\nBoolean formulae\n\n\nCriticality\n\n\n\n\n\n\nOct 5, 2023\n\n\nTulasimohan Molli\n\n\n5 min\n\n\n\n\n\n\n\nFourier Dimension and other relavent complexity measures\n\n\n\n\n\n\nFourier Analysis\n\n\nFourier dimension\n\n\nBoolean functions\n\n\n\n\n\n\nOct 5, 2023\n\n\nTulasimohan Molli\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications/papers.html",
@@ -61,20 +124,6 @@
     "title": "Papers",
     "section": "",
     "text": "Papers\n\n\n\n\n\n\nCriticality of AC^0 formulae.\n\n\n\nPrahladh Harsha, Tulasimohan Molli, Ashutosh Shankar  CCC 2023 | arXiv\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nSourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal.  FSTTCS 2021 | arXiv\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nSiddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan.  FSTTCS 2019 | RSA Journal | arXiv | eccc"
-  },
-  {
-    "objectID": "publications/notes/criticality.html#unpacking",
-    "href": "publications/notes/criticality.html#unpacking",
-    "title": "Criticality of DeMorgan formulae",
-    "section": "Unpacking",
-    "text": "Unpacking"
-  },
-  {
-    "objectID": "publications/notes/criticality.html#calculation",
-    "href": "publications/notes/criticality.html#calculation",
-    "title": "Criticality of DeMorgan formulae",
-    "section": "Calculation",
-    "text": "Calculation\n\nAuthor: Your Name\nDate: 2023-10-05"
   },
   {
     "objectID": "about.html",

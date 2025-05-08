@@ -3,16 +3,15 @@ title: Notes
 sidebar: true
 toc: true
 listing:
-  contents: "publications"  # Updated to point to the correct folder
+  contents: "publications/notes"  # Updated to point to the correct folder
   sort: "date desc"
-  type: default
+  type: default  
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort-ui: true
+  filter-ui: true
   fields: [date, title, reading-time, categories,author]
   feed: true
 page-layout: full
 title-block-banner: false
+title-block-categories: false
 ---
-
-# Ensure the listing points to the correct folder or file. If this is incorrect, update it to the appropriate path.

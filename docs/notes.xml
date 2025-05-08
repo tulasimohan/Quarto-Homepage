@@ -12,7 +12,26 @@
 <generator>quarto-1.6.39</generator>
 <lastBuildDate>Wed, 04 Oct 2023 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>Criticality of DeMorgan formulae</title>
+  <title>Probabilistic Polyomials</title>
+  <dc:creator>Tulasimohan Molli</dc:creator>
+  <link>https://tulasimohan.github.io/publications/notes/probabilistic polynomials.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>Polynomials</category>
+  <category>Probabilistic polynomials</category>
+  <category>Boolean functions</category>
+  <guid>https://tulasimohan.github.io/publications/notes/probabilistic polynomials.html</guid>
+  <pubDate>Wed, 04 Oct 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Criticality of Boolean functions</title>
   <dc:creator>Tulasimohan Molli</dc:creator>
   <link>https://tulasimohan.github.io/publications/notes/criticality.html</link>
   <description><![CDATA[ 
@@ -20,140 +39,178 @@
 
 
 
-<section id="canonical-decision-tree" class="level2">
-<h2 class="anchored" data-anchor-id="canonical-decision-tree">Canonical Decision Tree</h2>
+<p><strong>Question</strong>: What is Criticality? <br> <strong>Answer:</strong> Defined by Rossman in <span class="citation" data-cites="rossman2019">(Rossman 2019)</span> is a complexity measure for Boolean functions which captures the essence of Swithching Lemma.</p>
+<p><strong>Question:</strong> So, What is a Switching lemma? <br> <strong>Answer:</strong> Switching lemma studies the effect of random restrictions on depth 2 formulae i.e.&nbsp;DNFs and CNFs.</p>
+<p><strong>Question:</strong> So, what is a random restriction?</p>
+<section id="random-restrictions" class="level2">
+<h2 class="anchored" data-anchor-id="random-restrictions">Random restrictions</h2>
+<p>A <img src="https://latex.codecogs.com/png.latex?p"> -random restriction is distribution on the partial inputs. Each variable is independetly revealed with probability <img src="https://latex.codecogs.com/png.latex?p"> and hidden with probability <img src="https://latex.codecogs.com/png.latex?1-p">. When revealed it is set to 0 or 1 randomly. Here is a formal defintion,</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<img src="https://latex.codecogs.com/png.latex?p"> random restriction
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <img src="https://latex.codecogs.com/png.latex?X"> be the set of variables. A restriction <img src="https://latex.codecogs.com/png.latex?%5Crho"> is a map <img src="https://latex.codecogs.com/png.latex?%5Crho:%20X%20%5Cto%20%5C%7B0,1,*%5C%7D">. A <img src="https://latex.codecogs.com/png.latex?p">-random restriction is sampled as follows: - For each <img src="https://latex.codecogs.com/png.latex?i%20%5Cin%20n">, <img src="https://latex.codecogs.com/png.latex?x_i%20=%20%5Cbegin%7Bcases%7D%0A&amp;*%20%5Ctext%7B%5C%20with%20prob%5C%20%7D%20p%5C%5C%0A&amp;0%20%5Ctext%7B%5C%20with%20prob%5C%20%7D%20(1-p)/2%5C%5C%0A&amp;1%20%5Ctext%7B%5C%20with%20prob%5C%20%7D%20(1-p)/2.%0A%5Cend%7Bcases%7D"></p>
+</div>
+</div>
 </section>
-<section id="unpacking" class="level2">
-<h2 class="anchored" data-anchor-id="unpacking">Unpacking</h2>
+<section id="hastads-switching-lemma" class="level2">
+<h2 class="anchored" data-anchor-id="hastads-switching-lemma">Hastad’s switching lemma</h2>
+<p>Hastad in his Godel prize work on switching lemmas has studied the effect of random restrictions on depth 2 formulas i.e.&nbsp;DNF and CNF with bounded with. He showed that depth 2 formulas of bounded width become small depth decision trees with whp.</p>
+<ul>
+<li><p>To this date there are two proofs of this theorem available. One due to Hastad and the other due to Razabraov.</p></li>
+<li><p>Razbarov uses an encoding argument and the notion of a canonical decision tree.</p></li>
+</ul>
+<p>Since a decision tree of depth<img src="https://latex.codecogs.com/png.latex?k"> can be converted into a DNF and CNF of width <img src="https://latex.codecogs.com/png.latex?k">, this can be used switch a DNF to CNF and vice-versa. Hence the name Switching lemma.</p>
+<section id="applications-of-hsl" class="level3">
+<h3 class="anchored" data-anchor-id="applications-of-hsl">Applications of HSL</h3>
+<p>This has found many applications in Circuit Complexity.</p>
+<ul>
+<li><p>An application of the HSL proved in the original paper<span class="citation" data-cites="hastad1986">(Hastad 1986)</span> of Hastad is the tight size lower bound on <img src="https://latex.codecogs.com/png.latex?AC%5E0"> circuits computing parity.</p></li>
+<li><p>Following the Switching lemma <span class="citation" data-cites="linial1993">(Linial, Mansour, and Nisan 1993)</span> showed Fourier tail bounds which implied learning algorithms for DNFs and CNFs.</p></li>
+<li><p>Bazzi <span class="citation" data-cites="bazzi2009">(Bazzi 2009)</span>and Braverman<span class="citation" data-cites="braverman2010">(Braverman 2010)</span> constructed PRGs for DNFs and <img src="https://latex.codecogs.com/png.latex?AC%5E0"> circuits respectively. They works showed that bounded independence fools <img src="https://latex.codecogs.com/png.latex?AC%5E0"> circuits.</p></li>
+</ul>
 </section>
-<section id="calculation" class="level2">
-<h2 class="anchored" data-anchor-id="calculation">Calculation</h2>
-<hr>
-<p><em>Author: Your Name</em><br>
-<em>Date: 2023-10-05</em></p>
+</section>
+<section id="ac0-formulae" class="level2">
+<h2 class="anchored" data-anchor-id="ac0-formulae">AC0 formulae</h2>
+<ul>
+<li><p>Meanwhile <span class="citation" data-cites="rossman2018">(Rossman 2018)</span> showed tight lower bounds for <img src="https://latex.codecogs.com/png.latex?AC%5E0"> formulae using using a very clever application Hastad’s switching lemma.</p>
+<ul>
+<li><p>This result implies the <img src="https://latex.codecogs.com/png.latex?AC%5E0"> circuit lower bound.</p></li>
+<li><p>A size <img src="https://latex.codecogs.com/png.latex?S"> circuit of depth can be converted into a size <img src="https://latex.codecogs.com/png.latex?S%5Ed"> Formula of depth by starting from the bottom and carefully duplicating the nodes which are used more than once. Rossman Formula lower bound showed that this conversion is tight. <sup>1</sup></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="average-case-lower-bounds" class="level2">
+<h2 class="anchored" data-anchor-id="average-case-lower-bounds">Average case lower bounds</h2>
+<ul>
+<li><p>Hastad came up with his multi switching lemma and showed a Average case lower bound for <img src="https://latex.codecogs.com/png.latex?AC%5E0"> circuits. In doing so, he drastically simplifies his original proof of the HSL.</p>
+<ul>
+<li><p>In this proof, he comes with the notion of Downward closed set of restrictions and notes that certain events are downward closed and magically finishes the proof in a few lines.</p></li>
+<li><p>He constructs common decision trees for a collection of Boolean functions.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="one-theorem-to-prove-them-all" class="level2">
+<h2 class="anchored" data-anchor-id="one-theorem-to-prove-them-all">One theorem to prove them all</h2>
+<p>So far, we have seen Circuits and Formulae.</p>
+<ul>
+<li><p>Worst and Average case size lower bounds for <img src="https://latex.codecogs.com/png.latex?AC%5E0"> Cirucits. Both due to Hastad.</p></li>
+<li><p>Worst case size lower bound for <img src="https://latex.codecogs.com/png.latex?AC%5E0"> formulae.</p></li>
+</ul>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Average case lower bounds for <img src="https://latex.codecogs.com/png.latex?AC%5E0"> formulae.</p>
+</div>
+</div>
+<p>Why do we care?</p>
+<ul>
+<li>Implies all the other lower bounds that we mentioned till this point.</li>
+</ul>
+</section>
+<section id="criticality" class="level2">
+<h2 class="anchored" data-anchor-id="criticality">Criticality</h2>
+<p>Enters Rossman with his notion of Criticality inspired by the statement of HSL.</p>
+<ul>
+<li><p>Shows that all existing bounds are just bounds on Criticality. - [ ] write this.</p></li>
+<li><p>Bounds on Criticality imply all the applications, like</p>
+<ul>
+<li><p>Worst and Average case size lower bounds.</p></li>
+<li><p>Fourier tail bounds.</p></li>
+<li><p>Learning Algorithms.</p></li>
+<li><p>Satisfiability algorithms.</p></li>
+<li><p>Bounds on decision trees size.</p></li>
+</ul></li>
+<li><p>Conjectures that the Criticality of <img src="https://latex.codecogs.com/png.latex?AC%5E0"> formulae of size <img src="https://latex.codecogs.com/png.latex?S"> and depth <img src="https://latex.codecogs.com/png.latex?d+1"> is <img src="https://latex.codecogs.com/png.latex?%5Cfrac1d%20%5Cleft(%5Cfrac%7B%5Clog%20S%7D%7Bd%7D%5Cright)%5Ed">.</p></li>
+<li><p>Proved the conjecture for $<img src="https://latex.codecogs.com/png.latex?d%20=1"> i.e.&nbsp;CNFs and DNFs using some Entropic arguments.</p></li>
+<li><p>Proved the conjecture for Regular $<img src="https://latex.codecogs.com/png.latex?AC%5E0"> formulae in <span class="citation" data-cites="rossman2019">(Rossman 2019)</span>.</p></li>
+<li><p>The general formula case was resolved by <span class="citation" data-cites="harsha2023">(Harsha, Molli, and Shankar 2023)</span>.</p></li>
+</ul>
+</section>
+<section id="key-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="key-ideas">Key ideas</h2>
+<ul>
+<li><p>Canonical Decsion tree</p></li>
+<li><p>Razborov’s encoding proof</p></li>
+<li><p>Downward closure</p></li>
+<li><p>Canonical Common Decision trees</p></li>
+<li><p>Hastad’s downward closure proof</p></li>
+<li><p>Coupled sampling procedure for Sampling random restrictions</p></li>
+<li><p>Tree Restrictions</p></li>
+<li><p>Rossman’s Canonical Decision Tree for Formulae.</p></li>
+<li><p>Rossman’s Entropic proof for DNFs and Regular formulae.</p></li>
+</ul>
 
 
+
 </section>
 
- ]]></description>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-bazzi2009" class="csl-entry">
+Bazzi, Louay MJ. 2009. <span>“Polylogarithmic Independence Can Fool DNF Formulas.”</span> <em>SIAM Journal on Computing</em> 38 (6): 22202272. <a href="https://doi.org/10.1137/070691954">https://doi.org/10.1137/070691954</a>.
+</div>
+<div id="ref-braverman2010" class="csl-entry">
+Braverman, Mark. 2010. <span>“Polylogarithmic Independence Fools <span><em>AC</em></span> <span><sup>0</sup></span> Circuits.”</span> <em>Journal of the ACM</em> 57 (5): 1–10. <a href="https://doi.org/10.1145/1754399.1754401">https://doi.org/10.1145/1754399.1754401</a>.
+</div>
+<div id="ref-harsha2023" class="csl-entry">
+Harsha, Prahladh, Tulasimohan Molli, and Ashutosh Shankar. 2023. <span>“Criticality of AC⁰-Formulae.”</span> <em>LIPIcs, Volume 264, CCC 2023</em> 264: 19:1–24. <a href="https://doi.org/10.4230/LIPICS.CCC.2023.19">https://doi.org/10.4230/LIPICS.CCC.2023.19</a>.
+</div>
+<div id="ref-hastad1986" class="csl-entry">
+Hastad, J. 1986. <span>“The Eighteenth Annual ACM Symposium.”</span> In, 6–20. Berkeley, California, United States: ACM Press. <a href="https://doi.org/10.1145/12130.12132">https://doi.org/10.1145/12130.12132</a>.
+</div>
+<div id="ref-linial1993" class="csl-entry">
+Linial, Nathan, Yishay Mansour, and Noam Nisan. 1993. <span>“Constant Depth Circuits, Fourier Transform, and Learnability.”</span> <em>Journal of the ACM (JACM)</em> 40 (3): 607620. <a href="https://doi.org/10.1145/174130.174138">https://doi.org/10.1145/174130.174138</a>.
+</div>
+<div id="ref-rossman2018" class="csl-entry">
+Rossman, Benjamin. 2018. <span>“The Average Sensitivity of Bounded-Depth Formulas.”</span> <em>Computational Complexity</em> 27 (2): 209223. <a href="https://doi.org/10.1007/s00037-017-0156-0">https://doi.org/10.1007/s00037-017-0156-0</a>.
+</div>
+<div id="ref-rossman2019" class="csl-entry">
+———. 2019. <span>“Criticality of Regular Formulas.”</span> In. Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Why? Suppose this conversion is not tight, size $<img src="https://latex.codecogs.com/png.latex?S"> circuit became <img src="https://latex.codecogs.com/png.latex?o(S%5Ed)"> formula, then this would imply a too good to be true cirucit lower bound for <img src="https://latex.codecogs.com/png.latex?AC%5E0"> circuits↩︎</p></li>
+</ol>
+</section></div> ]]></description>
   <category>Boolean formulae</category>
   <category>Criticality</category>
   <guid>https://tulasimohan.github.io/publications/notes/criticality.html</guid>
   <pubDate>Wed, 04 Oct 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
-  <title></title>
-  <link>https://tulasimohan.github.io/publications/theses.html</link>
+  <title>Fourier Dimension and other relavent complexity measures</title>
+  <dc:creator>Tulasimohan Molli</dc:creator>
+  <link>https://tulasimohan.github.io/publications/notes/fourier.html</link>
   <description><![CDATA[ 
 
 
 
 
-<section id="theses-and-reports" class="level1">
-<h1>Theses and Reports</h1>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<strong>PhD Thesis: On Complexity Measures of Boolean Functions</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>under the guidance of Prof.&nbsp;Prahladh Harsha <br> at Tata Institute of Fundamental Research, Mumbai.</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<strong>Master Project: Structural results and applications to Arithmetic Circuit Complexity</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>under the guidance of Prof.&nbsp;Srikanth Srinivasan, <br> as a part of my Master’s Thesis at Chennai Mathematical Institute.</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<strong>Qualifier project: Lowerbonds for Depth-2 circuits with Threshold and Mod-gates</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>under the guidance of Prof.&nbsp;Arkadev Chattopadhyay, <br> at Tata Institute of Fundamental Research.</p>
-</div>
-</div>
 
 
-</section>
 
  ]]></description>
-  <guid>https://tulasimohan.github.io/publications/theses.html</guid>
-  <pubDate>Wed, 07 May 2025 14:41:06 GMT</pubDate>
-</item>
-<item>
-  <title></title>
-  <link>https://tulasimohan.github.io/publications/papers.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="papers" class="level1">
-<h1>Papers</h1>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<strong>Criticality of <img src="https://latex.codecogs.com/png.latex?AC%5E0"> formulae.</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Prahladh Harsha, Tulasimohan Molli, Ashutosh Shankar <br> <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2023.19">CCC 2023</a> | <a href="https://arxiv.org/abs/2212.08397">arXiv</a></p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<strong>Tight Chang’s lemma type bounds for Boolean functions.</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Sourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal. <br> <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2021.10">FSTTCS 2021</a> | <a href="https://arxiv.org/abs/2012.02335">arXiv</a></p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<strong>Probabilistic degree of OR over the Reals.</strong>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Siddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan. <br> <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2018.5">FSTTCS 2019</a> | <a href="https://onlinelibrary.wiley.com/doi/10.1002/rsa.20991">RSA Journal</a> | <a href="https://arxiv.org/abs/1812.01982">arXiv</a> | <a href="https://eccc.weizmann.ac.il/report/2018/207/">eccc</a></p>
-</div>
-</div>
-
-
-</section>
-
- ]]></description>
-  <guid>https://tulasimohan.github.io/publications/papers.html</guid>
-  <pubDate>Wed, 07 May 2025 14:41:06 GMT</pubDate>
+  <category>Fourier Analysis</category>
+  <category>Fourier dimension</category>
+  <category>Boolean functions</category>
+  <guid>https://tulasimohan.github.io/publications/notes/fourier.html</guid>
+  <pubDate>Wed, 04 Oct 2023 23:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

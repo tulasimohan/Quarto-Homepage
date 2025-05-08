@@ -2,10 +2,9 @@
   {
     "listing": "/notes.html",
     "items": [
-      "/publications/theses.html",
-      "/publications/papers.html",
-      "/publications/publications.html",
-      "/publications/notes/criticality.html"
+      "/publications/notes/probabilistic polynomials.html",
+      "/publications/notes/criticality.html",
+      "/publications/notes/fourier.html"
     ]
   }
 ]

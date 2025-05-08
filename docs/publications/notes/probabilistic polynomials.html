@@ -9,7 +9,7 @@
 <meta name="author" content="Tulasimohan Molli">
 <meta name="dcterms.date" content="2023-10-05">
 
-<title>Criticality of Boolean functions – Tulasimohan Molli</title>
+<title>Probabilistic Polyomials – Tulasimohan Molli</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -90,49 +70,6 @@ div.csl-indent {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 </head>
@@ -181,39 +118,25 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#random-restrictions" id="toc-random-restrictions" class="nav-link active" data-scroll-target="#random-restrictions">Random restrictions</a></li>
-  <li><a href="#hastads-switching-lemma" id="toc-hastads-switching-lemma" class="nav-link" data-scroll-target="#hastads-switching-lemma">Hastad’s switching lemma</a>
-  <ul class="collapse">
-  <li><a href="#applications-of-hsl" id="toc-applications-of-hsl" class="nav-link" data-scroll-target="#applications-of-hsl">Applications of HSL</a></li>
-  </ul></li>
-  <li><a href="#ac0-formulae" id="toc-ac0-formulae" class="nav-link" data-scroll-target="#ac0-formulae">AC0 formulae</a></li>
-  <li><a href="#average-case-lower-bounds" id="toc-average-case-lower-bounds" class="nav-link" data-scroll-target="#average-case-lower-bounds">Average case lower bounds</a></li>
-  <li><a href="#one-theorem-to-prove-them-all" id="toc-one-theorem-to-prove-them-all" class="nav-link" data-scroll-target="#one-theorem-to-prove-them-all">One theorem to prove them all</a></li>
-  <li><a href="#criticality" id="toc-criticality" class="nav-link" data-scroll-target="#criticality">Criticality</a></li>
-  <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Criticality of Boolean functions</h1>
+<h1 class="title">Probabilistic Polyomials</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Boolean formulae</div>
-    <div class="quarto-category">Criticality</div>
+    <div class="quarto-category">Polynomials</div>
+    <div class="quarto-category">Probabilistic polynomials</div>
+    <div class="quarto-category">Boolean functions</div>
   </div>
   </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -237,159 +160,10 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Question</strong>: What is Criticality? <br> <strong>Answer:</strong> Defined by Rossman in <span class="citation" data-cites="rossman2019">(<a href="#ref-rossman2019" role="doc-biblioref">Rossman 2019</a>)</span> is a complexity measure for Boolean functions which captures the essence of Swithching Lemma.</p>
-<p><strong>Question:</strong> So, What is a Switching lemma? <br> <strong>Answer:</strong> Switching lemma studies the effect of random restrictions on depth 2 formulae i.e.&nbsp;DNFs and CNFs.</p>
-<p><strong>Question:</strong> So, what is a random restriction?</p>
-<section id="random-restrictions" class="level2">
-<h2 class="anchored" data-anchor-id="random-restrictions">Random restrictions</h2>
-<p>A <span class="math inline">p</span> -random restriction is distribution on the partial inputs. Each variable is independetly revealed with probability <span class="math inline">p</span> and hidden with probability <span class="math inline">1-p</span>. When revealed it is set to 0 or 1 randomly. Here is a formal defintion,</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="math inline">p</span> random restriction
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Let <span class="math inline">X</span> be the set of variables. A restriction <span class="math inline">\rho</span> is a map <span class="math inline">\rho: X \to \{0,1,*\}</span>. A <span class="math inline">p</span>-random restriction is sampled as follows: - For each <span class="math inline">i \in n</span>, <span class="math display">x_i = \begin{cases}
-&amp;* \text{\ with prob\ } p\\
-&amp;0 \text{\ with prob\ } (1-p)/2\\
-&amp;1 \text{\ with prob\ } (1-p)/2.
-\end{cases}</span></p>
-</div>
-</div>
-</section>
-<section id="hastads-switching-lemma" class="level2">
-<h2 class="anchored" data-anchor-id="hastads-switching-lemma">Hastad’s switching lemma</h2>
-<p>Hastad in his Godel prize work on switching lemmas has studied the effect of random restrictions on depth 2 formulas i.e.&nbsp;DNF and CNF with bounded with. He showed that depth 2 formulas of bounded width become small depth decision trees with whp.</p>
-<ul>
-<li><p>To this date there are two proofs of this theorem available. One due to Hastad and the other due to Razabraov.</p></li>
-<li><p>Razbarov uses an encoding argument and the notion of a canonical decision tree.</p></li>
-</ul>
-<p>Since a decision tree of depth<span class="math inline">k</span> can be converted into a DNF and CNF of width <span class="math inline">k</span>, this can be used switch a DNF to CNF and vice-versa. Hence the name Switching lemma.</p>
-<section id="applications-of-hsl" class="level3">
-<h3 class="anchored" data-anchor-id="applications-of-hsl">Applications of HSL</h3>
-<p>This has found many applications in Circuit Complexity.</p>
-<ul>
-<li><p>An application of the HSL proved in the original paper<span class="citation" data-cites="hastad1986">(<a href="#ref-hastad1986" role="doc-biblioref">Hastad 1986</a>)</span> of Hastad is the tight size lower bound on <span class="math inline">AC^0</span> circuits computing parity.</p></li>
-<li><p>Following the Switching lemma <span class="citation" data-cites="linial1993">(<a href="#ref-linial1993" role="doc-biblioref">Linial, Mansour, and Nisan 1993</a>)</span> showed Fourier tail bounds which implied learning algorithms for DNFs and CNFs.</p></li>
-<li><p>Bazzi <span class="citation" data-cites="bazzi2009">(<a href="#ref-bazzi2009" role="doc-biblioref">Bazzi 2009</a>)</span>and Braverman<span class="citation" data-cites="braverman2010">(<a href="#ref-braverman2010" role="doc-biblioref">Braverman 2010</a>)</span> constructed PRGs for DNFs and <span class="math inline">AC^0</span> circuits respectively. They works showed that bounded independence fools <span class="math inline">AC^0</span> circuits.</p></li>
-</ul>
-</section>
-</section>
-<section id="ac0-formulae" class="level2">
-<h2 class="anchored" data-anchor-id="ac0-formulae">AC0 formulae</h2>
-<ul>
-<li><p>Meanwhile <span class="citation" data-cites="rossman2018">(<a href="#ref-rossman2018" role="doc-biblioref">Rossman 2018</a>)</span> showed tight lower bounds for <span class="math inline">AC^0</span> formulae using using a very clever application Hastad’s switching lemma.</p>
-<ul>
-<li><p>This result implies the <span class="math inline">AC^0</span> circuit lower bound.</p></li>
-<li><p>A size <span class="math inline">S</span> circuit of depth can be converted into a size <span class="math inline">S^d</span> Formula of depth by starting from the bottom and carefully duplicating the nodes which are used more than once. Rossman Formula lower bound showed that this conversion is tight. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="average-case-lower-bounds" class="level2">
-<h2 class="anchored" data-anchor-id="average-case-lower-bounds">Average case lower bounds</h2>
-<ul>
-<li><p>Hastad came up with his multi switching lemma and showed a Average case lower bound for <span class="math inline">AC^0</span> circuits. In doing so, he drastically simplifies his original proof of the HSL.</p>
-<ul>
-<li><p>In this proof, he comes with the notion of Downward closed set of restrictions and notes that certain events are downward closed and magically finishes the proof in a few lines.</p></li>
-<li><p>He constructs common decision trees for a collection of Boolean functions.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="one-theorem-to-prove-them-all" class="level2">
-<h2 class="anchored" data-anchor-id="one-theorem-to-prove-them-all">One theorem to prove them all</h2>
-<p>So far, we have seen Circuits and Formulae.</p>
-<ul>
-<li><p>Worst and Average case size lower bounds for <span class="math inline">AC^0</span> Cirucits. Both due to Hastad.</p></li>
-<li><p>Worst case size lower bound for <span class="math inline">AC^0</span> formulae.</p></li>
-</ul>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Question:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Average case lower bounds for <span class="math inline">AC^0</span> formulae.</p>
-</div>
-</div>
-<p>Why do we care?</p>
-<ul>
-<li>Implies all the other lower bounds that we mentioned till this point.</li>
-</ul>
-</section>
-<section id="criticality" class="level2">
-<h2 class="anchored" data-anchor-id="criticality">Criticality</h2>
-<p>Enters Rossman with his notion of Criticality inspired by the statement of HSL.</p>
-<ul>
-<li><p>Shows that all existing bounds are just bounds on Criticality. - [ ] write this.</p></li>
-<li><p>Bounds on Criticality imply all the applications, like</p>
-<ul>
-<li><p>Worst and Average case size lower bounds.</p></li>
-<li><p>Fourier tail bounds.</p></li>
-<li><p>Learning Algorithms.</p></li>
-<li><p>Satisfiability algorithms.</p></li>
-<li><p>Bounds on decision trees size.</p></li>
-</ul></li>
-<li><p>Conjectures that the Criticality of <span class="math inline">AC^0</span> formulae of size <span class="math inline">S</span> and depth <span class="math inline">d+1</span> is <span class="math inline">\frac1d \left(\frac{\log S}{d}\right)^d</span>.</p></li>
-<li><p>Proved the conjecture for $<span class="math inline">d =1</span> i.e.&nbsp;CNFs and DNFs using some Entropic arguments.</p></li>
-<li><p>Proved the conjecture for Regular $<span class="math inline">AC^0</span> formulae in <span class="citation" data-cites="rossman2019">(<a href="#ref-rossman2019" role="doc-biblioref">Rossman 2019</a>)</span>.</p></li>
-<li><p>The general formula case was resolved by <span class="citation" data-cites="harsha2023">(<a href="#ref-harsha2023" role="doc-biblioref">Harsha, Molli, and Shankar 2023</a>)</span>.</p></li>
-</ul>
-</section>
-<section id="key-ideas" class="level2">
-<h2 class="anchored" data-anchor-id="key-ideas">Key ideas</h2>
-<ul>
-<li><p>Canonical Decsion tree</p></li>
-<li><p>Razborov’s encoding proof</p></li>
-<li><p>Downward closure</p></li>
-<li><p>Canonical Common Decision trees</p></li>
-<li><p>Hastad’s downward closure proof</p></li>
-<li><p>Coupled sampling procedure for Sampling random restrictions</p></li>
-<li><p>Tree Restrictions</p></li>
-<li><p>Rossman’s Canonical Decision Tree for Formulae.</p></li>
-<li><p>Rossman’s Entropic proof for DNFs and Regular formulae.</p></li>
-</ul>
 
 
 
-</section>
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-bazzi2009" class="csl-entry" role="listitem">
-Bazzi, Louay MJ. 2009. <span>“Polylogarithmic Independence Can Fool DNF Formulas.”</span> <em>SIAM Journal on Computing</em> 38 (6): 22202272. <a href="https://doi.org/10.1137/070691954">https://doi.org/10.1137/070691954</a>.
-</div>
-<div id="ref-braverman2010" class="csl-entry" role="listitem">
-Braverman, Mark. 2010. <span>“Polylogarithmic Independence Fools <span><em>AC</em></span> <span><sup>0</sup></span> Circuits.”</span> <em>Journal of the ACM</em> 57 (5): 1–10. <a href="https://doi.org/10.1145/1754399.1754401">https://doi.org/10.1145/1754399.1754401</a>.
-</div>
-<div id="ref-harsha2023" class="csl-entry" role="listitem">
-Harsha, Prahladh, Tulasimohan Molli, and Ashutosh Shankar. 2023. <span>“Criticality of AC⁰-Formulae.”</span> <em>LIPIcs, Volume 264, CCC 2023</em> 264: 19:1–24. <a href="https://doi.org/10.4230/LIPICS.CCC.2023.19">https://doi.org/10.4230/LIPICS.CCC.2023.19</a>.
-</div>
-<div id="ref-hastad1986" class="csl-entry" role="listitem">
-Hastad, J. 1986. <span>“The Eighteenth Annual ACM Symposium.”</span> In, 6–20. Berkeley, California, United States: ACM Press. <a href="https://doi.org/10.1145/12130.12132">https://doi.org/10.1145/12130.12132</a>.
-</div>
-<div id="ref-linial1993" class="csl-entry" role="listitem">
-Linial, Nathan, Yishay Mansour, and Noam Nisan. 1993. <span>“Constant Depth Circuits, Fourier Transform, and Learnability.”</span> <em>Journal of the ACM (JACM)</em> 40 (3): 607620. <a href="https://doi.org/10.1145/174130.174138">https://doi.org/10.1145/174130.174138</a>.
-</div>
-<div id="ref-rossman2018" class="csl-entry" role="listitem">
-Rossman, Benjamin. 2018. <span>“The Average Sensitivity of Bounded-Depth Formulas.”</span> <em>Computational Complexity</em> 27 (2): 209223. <a href="https://doi.org/10.1007/s00037-017-0156-0">https://doi.org/10.1007/s00037-017-0156-0</a>.
-</div>
-<div id="ref-rossman2019" class="csl-entry" role="listitem">
-———. 2019. <span>“Criticality of Regular Formulas.”</span> In. Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Why? Suppose this conversion is not tight, size $<span class="math inline">S</span> circuit became <span class="math inline">o(S^d)</span> formula, then this would imply a too good to be true cirucit lower bound for <span class="math inline">AC^0</span> circuits<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
