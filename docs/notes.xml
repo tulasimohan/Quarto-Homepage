@@ -20,8 +20,37 @@
 
 
 
+<section id="preliminaries" class="level2">
+<h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
+<p>A Probabilistic polynomial is a distribution on Polynomials.</p>
+<p>A low-degree probabilistic polynomial is a supported on low-degree polynomials.</p>
+<section id="possible-alternatives" class="level3">
+<h3 class="anchored" data-anchor-id="possible-alternatives">Possible alternatives:</h3>
+<ul>
+<li><p>Distribution on Polynomials of low-sparsity polynomials. What is the complexity measure to track here.</p></li>
+<li><p>Right now, degree is the minimum of degrees of all polynomials in the support. Can we use an average notion?</p></li>
+<li><p>PAC polynomials: Probably Approximate Polynomials.</p></li>
+</ul>
+</section>
+<section id="applications-of-probabilistic-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="applications-of-probabilistic-polynomials">Applications of Probabilistic polynomials:</h3>
+<ul>
+<li><p>Braverman and Bazzi’s poly-logarithmic independence fools $AC^0$.</p></li>
+<li><p>Ryan- Williams’ algorithms.</p></li>
+</ul>
+<p>Probabilistic Polynomials and Hamming Nearest Neighbours [Alman, Williams]</p>
+<p>Show how to compute any symmetric Boolean function on <img src="https://latex.codecogs.com/png.latex?n"> variables over any field (as well as the integers) with a probabilistic polynomial of degree <img src="https://latex.codecogs.com/png.latex?O(%5Csqrt%7Bn%20%5Clog%201/%5Cepsilon%7D)"> and error at most ϵ.</p>
+<ul>
+<li><p>Does Probabilistic polynomials offer speed-up in for computing other functions?</p>
+<ul class="task-list">
+<li><label><input type="checkbox">review and write about the proof of Bazzi and Impagliazzo’s poly-logarithmic independence fools $AC^0$.</label></li>
+</ul></li>
+<li><p>What are tricks useful for computing functions using probabilistic polynomials?</p></li>
+</ul>
 
 
+</section>
+</section>
 
  ]]></description>
   <category>Polynomials</category>

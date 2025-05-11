@@ -70,6 +70,49 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/styles.css">
 </head>
@@ -118,11 +161,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link active" data-scroll-target="#preliminaries">Preliminaries</a>
+  <ul class="collapse">
+  <li><a href="#possible-alternatives" id="toc-possible-alternatives" class="nav-link" data-scroll-target="#possible-alternatives">Possible alternatives:</a></li>
+  <li><a href="#applications-of-probabilistic-polynomials" id="toc-applications-of-probabilistic-polynomials" class="nav-link" data-scroll-target="#applications-of-probabilistic-polynomials">Applications of Probabilistic polynomials:</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -136,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -160,8 +213,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="preliminaries" class="level2">
+<h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
+<p>A Probabilistic polynomial is a distribution on Polynomials.</p>
+<p>A low-degree probabilistic polynomial is a supported on low-degree polynomials.</p>
+<section id="possible-alternatives" class="level3">
+<h3 class="anchored" data-anchor-id="possible-alternatives">Possible alternatives:</h3>
+<ul>
+<li><p>Distribution on Polynomials of low-sparsity polynomials. What is the complexity measure to track here.</p></li>
+<li><p>Right now, degree is the minimum of degrees of all polynomials in the support. Can we use an average notion?</p></li>
+<li><p>PAC polynomials: Probably Approximate Polynomials.</p></li>
+</ul>
+</section>
+<section id="applications-of-probabilistic-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="applications-of-probabilistic-polynomials">Applications of Probabilistic polynomials:</h3>
+<ul>
+<li><p>Braverman and Bazzi’s poly-logarithmic independence fools $AC^0$.</p></li>
+<li><p>Ryan- Williams’ algorithms.</p></li>
+</ul>
+<p>Probabilistic Polynomials and Hamming Nearest Neighbours [Alman, Williams]</p>
+<p>Show how to compute any symmetric Boolean function on <span class="math inline">n</span> variables over any field (as well as the integers) with a probabilistic polynomial of degree <span class="math inline">O(\sqrt{n \log 1/\epsilon})</span> and error at most ϵ.</p>
+<ul>
+<li><p>Does Probabilistic polynomials offer speed-up in for computing other functions?</p>
+<ul class="task-list">
+<li><label><input type="checkbox">review and write about the proof of Bazzi and Impagliazzo’s poly-logarithmic independence fools $AC^0$.</label></li>
+</ul></li>
+<li><p>What are tricks useful for computing functions using probabilistic polynomials?</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

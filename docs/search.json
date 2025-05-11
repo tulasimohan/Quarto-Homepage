@@ -126,6 +126,20 @@
     "text": "Papers\n\n\n\n\n\n\nCriticality of AC^0 formulae.\n\n\n\nPrahladh Harsha, Tulasimohan Molli, Ashutosh Shankar  CCC 2023 | arXiv\n\n\n\n\n\n\n\n\nTight Chang’s lemma type bounds for Boolean functions.\n\n\n\nSourav Chakraborty, Nikhil S. Mande, Rajat Mittal, Tulasimohan Molli, Manaswi Paraashar, Swagato Sanyal.  FSTTCS 2021 | arXiv\n\n\n\n\n\n\n\n\nProbabilistic degree of OR over the Reals.\n\n\n\nSiddharth Bhandari, Prahladh Harsha, Tulasimohan Molli, Srikanth Srinivasan.  FSTTCS 2019 | RSA Journal | arXiv | eccc"
   },
   {
+    "objectID": "publications/notes/probabilistic polynomials.html",
+    "href": "publications/notes/probabilistic polynomials.html",
+    "title": "Probabilistic Polyomials",
+    "section": "",
+    "text": "A Probabilistic polynomial is a distribution on Polynomials.\nA low-degree probabilistic polynomial is a supported on low-degree polynomials.\n\n\n\nDistribution on Polynomials of low-sparsity polynomials. What is the complexity measure to track here.\nRight now, degree is the minimum of degrees of all polynomials in the support. Can we use an average notion?\nPAC polynomials: Probably Approximate Polynomials.\n\n\n\n\n\nBraverman and Bazzi’s poly-logarithmic independence fools $AC^0$.\nRyan- Williams’ algorithms.\n\nProbabilistic Polynomials and Hamming Nearest Neighbours [Alman, Williams]\nShow how to compute any symmetric Boolean function on n variables over any field (as well as the integers) with a probabilistic polynomial of degree O(\\sqrt{n \\log 1/\\epsilon}) and error at most ϵ.\n\nDoes Probabilistic polynomials offer speed-up in for computing other functions?\n\nreview and write about the proof of Bazzi and Impagliazzo’s poly-logarithmic independence fools $AC^0$.\n\nWhat are tricks useful for computing functions using probabilistic polynomials?"
+  },
+  {
+    "objectID": "publications/notes/probabilistic polynomials.html#preliminaries",
+    "href": "publications/notes/probabilistic polynomials.html#preliminaries",
+    "title": "Probabilistic Polyomials",
+    "section": "",
+    "text": "A Probabilistic polynomial is a distribution on Polynomials.\nA low-degree probabilistic polynomial is a supported on low-degree polynomials.\n\n\n\nDistribution on Polynomials of low-sparsity polynomials. What is the complexity measure to track here.\nRight now, degree is the minimum of degrees of all polynomials in the support. Can we use an average notion?\nPAC polynomials: Probably Approximate Polynomials.\n\n\n\n\n\nBraverman and Bazzi’s poly-logarithmic independence fools $AC^0$.\nRyan- Williams’ algorithms.\n\nProbabilistic Polynomials and Hamming Nearest Neighbours [Alman, Williams]\nShow how to compute any symmetric Boolean function on n variables over any field (as well as the integers) with a probabilistic polynomial of degree O(\\sqrt{n \\log 1/\\epsilon}) and error at most ϵ.\n\nDoes Probabilistic polynomials offer speed-up in for computing other functions?\n\nreview and write about the proof of Bazzi and Impagliazzo’s poly-logarithmic independence fools $AC^0$.\n\nWhat are tricks useful for computing functions using probabilistic polynomials?"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Tulasimohan Molli",
