@@ -8,42 +8,33 @@ bibliography: references.bib
 draft: true
 ---
 
-**Question**: What is Criticality? <br>
-**Answer:** Defined by Rossman in [@rossman2019] is a complexity measure for Boolean functions which captures the essence of Swithching Lemma.
+$\newcommand{\zo}{\{0,1\}}$ **Question**: What is Criticality? <br> **Answer:** Defined by Rossman in [@rossman2019] is a complexity measure for Boolean functions which captures the essence of Swithching Lemma.
 
-**Question:**  So, What is a Switching lemma? <br>
-**Answer:** Switching lemma studies the effect of random restrictions on depth 2 formulae i.e. DNFs and CNFs.
+**Question:** So, What is a Switching lemma? <br> **Answer:** Switching lemma studies the effect of random restrictions on depth 2 formulae i.e. DNFs and CNFs.
 
-**Question:** So, what is a random restriction? 
+**Question:** So, what is a random restriction?
 
 ## Random restrictions
 
-A $p$ -random restriction is distribution on the partial inputs.
-Each variable is independetly revealed with probability $p$ and hidden with probability $1-p$. When revealed it is set to 0 or 1 randomly. Here is a formal defintion,
+A $p$ -random restriction is distribution on the partial inputs. Each variable is independetly revealed with probability $p$ and hidden with probability $1-p$. When revealed it is set to 0 or 1 randomly. Here is a formal defintion,
 
 ::: {.callout-note icon="false"}
 ## $p$ random restriction
-Let $X$ be the set of variables. A restriction $\rho$ is a map $\rho: X \to \{0,1,*\}$. 
-A $p$-random restriction is sampled as follows:
-- For each $i \in n$, 
-$$x_i = \begin{cases}
+
+Let $X$ be the set of variables. A restriction $\rho$ is a map $\rho: X \to \{0,1,*\}$. A $p$-random restriction is sampled as follows: - For each $i \in n$, $$x_i = \begin{cases}
 &* \text{\ with prob\ } p\\
 &0 \text{\ with prob\ } (1-p)/2\\
 &1 \text{\ with prob\ } (1-p)/2.
 \end{cases}$$
 :::
 
-
-
 ## Hastad's switching lemma
 
-Hastad in his Godel prize work on switching lemmas has studied the effect of random restrictions on depth 2 formulas i.e. DNF and CNF with bounded with.
-He showed that depth 2 formulas of bounded width become small depth decision trees with whp.
+Hastad in his Godel prize work on switching lemmas has studied the effect of random restrictions on depth 2 formulas i.e. DNF and CNF with bounded with. He showed that depth 2 formulas of bounded width become small depth decision trees with whp.
 
 -   To this date there are two proofs of this theorem available. One due to Hastad and the other due to Razabraov.
 
 -   Razbarov uses an encoding argument and the notion of a canonical decision tree.
-
 
 Since a decision tree of depth$k$ can be converted into a DNF and CNF of width $k$, this can be used switch a DNF to CNF and vice-versa. Hence the name Switching lemma.
 
@@ -55,8 +46,7 @@ This has found many applications in Circuit Complexity.
 
 -   Following the Switching lemma [@linial1993] showed Fourier tail bounds which implied learning algorithms for DNFs and CNFs.
 
--   Bazzi [@bazzi2009]and Braverman[@braverman2010] constructed PRGs for DNFs and $AC^0$ circuits respectively.
-    They works showed that bounded independence fools $AC^0$ circuits.
+-   Bazzi [@bazzi2009]and Braverman[@braverman2010] constructed PRGs for DNFs and $AC^0$ circuits respectively. They works showed that bounded independence fools $AC^0$ circuits.
 
 ## AC0 formulae
 
@@ -64,10 +54,11 @@ This has found many applications in Circuit Complexity.
 
     -   This result implies the $AC^0$ circuit lower bound.
 
-    -   A size $S$ circuit of depth can be converted into a size $S^d$ Formula of depth by starting from the bottom and carefully duplicating the nodes which are used more than once.
-        Rossman Formula lower bound showed that this conversion is tight. [^1]
+    -   A size $S$ circuit of depth can be converted into a size $S^d$ Formula of depth by starting from the bottom and carefully duplicating the nodes which are used more than once. Rossman Formula lower bound showed that this conversion is tight. [^1]
 
-## Average case lower bounds 
+[^1]: Why? Suppose this conversion is not tight, size \$$S$ circuit became $o(S^d)$ formula, then this would imply a too good to be true cirucit lower bound for $AC^0$ circuits
+
+## Average case lower bounds
 
 -   Hastad came up with his multi switching lemma and showed a Average case lower bound for $AC^0$ circuits. In doing so, he drastically simplifies his original proof of the HSL.
 
@@ -75,10 +66,7 @@ This has found many applications in Circuit Complexity.
 
     -   He constructs common decision trees for a collection of Boolean functions.
 
-[^1]: Why?
-    Suppose this conversion is not tight, size $$S$ circuit became $o(S^d)$ formula, then this would imply a too good to be true cirucit lower bound for $AC^0$ circuits
-
-## One theorem to prove them all 
+## One theorem to prove them all
 
 So far, we have seen Circuits and Formulae.
 
@@ -88,6 +76,7 @@ So far, we have seen Circuits and Formulae.
 
 ::: {.callout-caution icon="false"}
 ### Question:
+
 Average case lower bounds for $AC^0$ formulae.
 :::
 
@@ -95,11 +84,11 @@ Why do we care?
 
 -   Implies all the other lower bounds that we mentioned till this point.
 
+## Criticality
 
-## Criticality 
 Enters Rossman with his notion of Criticality inspired by the statement of HSL.
 
--   Shows that all existing bounds are just bounds on Criticality.  - [ ] write this.  
+-   Shows that all existing bounds are just bounds on Criticality. - \[ \] write this.
 
 -   Bounds on Criticality imply all the applications, like
 
@@ -113,7 +102,7 @@ Enters Rossman with his notion of Criticality inspired by the statement of HSL.
 
     -   Bounds on decision trees size.
 
--   Conjectures that the Criticality of $AC^0$ formulae of size $S$ and depth  $d+1$ is $\frac1d \left(\frac{\log S}{d}\right)^d$.
+-   Conjectures that the Criticality of $AC^0$ formulae of size $S$ and depth $d+1$ is $\frac1d \left(\frac{\log S}{d}\right)^d$.
 
 -   Proved the conjecture for \$$d =1$ i.e. CNFs and DNFs using some Entropic arguments.
 
@@ -121,7 +110,7 @@ Enters Rossman with his notion of Criticality inspired by the statement of HSL.
 
 -   The general formula case was resolved by [@harsha2023].
 
-## Key ideas 
+## Key ideas
 
 -   Canonical Decsion tree
 
