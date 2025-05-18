@@ -1,11 +1,17 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/**/*
+    - CNAME
+    - .nojekyll
+    - googlef48d8f5728f4a046.html
+    - sitemap.xml
 
 website:
   title: "Tulasimohan Molli"
   site-url: "https://tulasimohan.github.io"
-  favicon: images/TM_logo.png
+  favicon: assets/images/TM_logo.png
   description: "Tulasimohan Molli's personal website"
   navbar:
     background: white
@@ -16,25 +22,27 @@ website:
       - text: Publications 
         href: publications/publications.qmd
       - text: Teaching
-        href: teaching.qmd
+        href: src/pages/teaching.qmd
+      - text: Links
+        href: src/pages/links.qmd
       - text: CV
-        href: Tulasi_s_Resume.pdf
+        href: assets/pdf/Tulasi_s_Resume.pdf
   page-footer: 
     center: "Made with [Quarto](https://quarto.org) &#8729; h/t [Neeldhara Misra](https://www.neeldhara.com/)."
     right: 
-      - text: "<img src='/images/github.svg' width='16' alt='GitHub'>"
+      - text: "<img src='assets/images/github.svg' width='16' alt='GitHub'>"
         href: https://github.com/tulasimohan
-      - text: "<img src='/images/linkedin.png' width='16' alt='LinkedIn'>"
+      - text: "<img src='assets/images/linkedin.png' width='16' alt='LinkedIn'>"
         href: https://www.linkedin.com/in/tulasimohan-molli-b206b2164
-      - text: "<img src='/images/mastodon.png' width='16' alt='Mastodon'>"
+      - text: "<img src='assets/images/mastodon.png' width='16' alt='Mastodon'>"
         href: https://mathstodon.xyz/@tulasimohan
-      - text: "<img src='/images/bluesky.png' width='16' alt='Bluesky'>"
+      - text: "<img src='assets/images/bluesky.png' width='16' alt='Bluesky'>"
         href: https://bsky.app/profile/tulasimohan.bsky.social
-      - text: "<img src='/images/dblp.png' width='16' alt='DBLP'>"
+      - text: "<img src='assets/images/dblp.png' width='16' alt='DBLP'>"
         href: https://dblp.org/pid/231/1775.html
-      - text: "<img src='/images/ORCID.png' width='16' alt='ORCID'>"
+      - text: "<img src='assets/images/ORCID.png' width='16' alt='ORCID'>"
         href: https://orcid.org/0000-0001-6683-9050
-      - text: "<img src='/images/google_scholar.png' width='16' alt='Google Scholar'>"
+      - text: "<img src='assets/images/google_scholar.png' width='16' alt='Google Scholar'>"
         href: https://scholar.google.com/citations?user=_WTuVPIAAAAJ&hl=en
      
 
@@ -42,16 +50,20 @@ format:
   html:
     base-url: "/"
     theme: 
-      light: [cosmo, custom.scss] 
-    css: css/styles.css
+      light: [cosmo, assets/css/custom.scss]
+    css: 
+      - assets/css/styles.css
+      - assets/css/fonts.css
     toc: true
     html-math-method: katex
     smooth-scroll: true
     anchor-sections: true
     page-layout: full
-    includes:
-      in-header: googlef48d8f5728f4a046.html
-      after-body: googlef48d8f5728f4a046.html
+    include-in-header: googlef48d8f5728f4a046.html
+    include-after-body: googlef48d8f5728f4a046.html
+    mainfont: "IBM Plex Serif"
+    monofont: "IBM Plex Mono"
+    linkcolor: "#0077CC"
 
 # Ensure the Google Search Console verification file and sitemap are included in the output
 resources:

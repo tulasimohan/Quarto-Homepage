@@ -1,6 +1,9 @@
 [
   {
-    "listing": "/notes.html",
-    "items": []
+    "listing": "/src/pages/notes.html",
+    "items": [
+      "/publications/notes/timeline.html",
+      "/publications/notes/vertical_timeline.html"
+    ]
   }
 ]
